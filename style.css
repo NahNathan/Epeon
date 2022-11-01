@@ -1,0 +1,67 @@
+body{
+    background: chocolate;
+}
+
+header {
+	background: linear-gradient(darkgreen,purple);
+	padding: 2em 0;
+}
+
+.caixa{
+    font-size: 8em;
+    text-align:center;
+    font-style: italic;
+    color:aliceblue;
+}
+
+nav li {
+	display: inline;
+    text-align: center;
+}
+
+nav a {
+	text-transform: uppercase;
+	color:aliceblue;	
+	font-weight: bold;
+	font-size: 15%;
+    text-decoration: none;
+}
+
+nav a:hover{
+	color:bisque;
+}
+
+nav a:active{
+	color: aquamarine;
+}
+
+.container_img{
+    position: relative;
+    padding: 1em 1em 1em 1em;
+    margin:1em 1em 1em 1em;
+}
+
+.imagem{
+    border-radius: 10%;
+    width: 900px;
+    box-shadow: 10px 10px 5px lightblue;
+    margin: 1em 1em 1em 1em;
+    position: absolute;  
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);            
+}
+
+.container_txt{
+    text-align: center;
+    position: relative;
+    padding: 1em 1em 1em 1em;
+    margin:1em 1em 1em 1em;
+}
+
+#texto{
+    font-size: larger;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+}
