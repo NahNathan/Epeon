@@ -43,7 +43,7 @@ nav a:active{
 
 .imagem{
     border-radius: 10%;
-    width: 900px;
+    width: 55em;
     box-shadow: 10px 10px 5px lightblue;
     margin: 1em 1em 1em 1em;
     position: absolute;  
@@ -64,4 +64,17 @@ nav a:active{
     font-style: italic;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:aliceblue;
+}
+
+.lista li{
+    display:list-item;
+	text-align: center;
+	vertical-align: top;
+	margin: 0.5em 0.5em;
+	box-sizing: border-box;
+}
+
+.bandeira{
+    margin: 1em;
+    border-radius: 15px;
 }
