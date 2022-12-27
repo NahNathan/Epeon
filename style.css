@@ -39,7 +39,6 @@ nav a:active{
     position: relative;
     padding: 5vw;
     margin-bottom: 20px;
-    width: fit-content;
 }
 
 .imagem{
@@ -66,6 +65,7 @@ nav a:active{
 .bandeira{
     margin: 1vh;
     border-radius: 15px;
+    height: 65vh;
 }
 
 .dexter{
