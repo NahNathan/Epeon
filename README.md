@@ -1,2 +1,2 @@
 # Epeon
-https://nahnathan.github.io/Epeon/divindades.html
+https://nahnathan.github.io/Epeon/index.html
