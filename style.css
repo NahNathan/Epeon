@@ -1,3 +1,8 @@
+@font-face{
+    font-family: FonteTulipa;
+    src: url(Ancient-Tulip.ttf);
+}
+
 body{
     background: chocolate;
 }
@@ -9,8 +14,6 @@ header {
 .caixa{
     font-size:10vw;
     text-align:center;
-    font-style: italic;
-    color:aliceblue;
     padding-top: 50px;   
 }
 
@@ -22,9 +25,9 @@ nav li {
 nav a {
 	text-transform: uppercase;
 	color:aliceblue;	
-	font-weight: bold;
 	font-size:2.5vw;
     text-decoration: none;
+    font-family: FonteTulipa, Courier;
 }
 
 nav a:hover{
