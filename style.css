@@ -87,14 +87,15 @@ nav a:active{
     color: aliceblue;
     background-color:brown;
     font-family:FonteMedieval, Courier;
-    font-size: 4vh;
+    font-size: 4.5vh;
     transition: all 0.3s;
     margin: 5%;
+    border-radius: 15%;
 }
 
 .rolada:hover{
-    background-color: chocolate;
-    box-shadow: 6px 6px 7px lightblue;
+    background-color: blueviolet;
+    box-shadow: 1px 1px 10px lightblue;
 }
 
 .caixa_baixa{
