@@ -1,89 +1,89 @@
-@font-face{
+@font-face {
     font-family: FonteTulipa;
     src: url(Ancient-Tulip.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: FonteMedieval;
     src: url(MedievalSharp-Book.ttf);
 }
 
-body{
+body {
     background: chocolate;
 }
 
 header {
-    background: linear-gradient(gray,chocolate);
+    background: linear-gradient(gray, chocolate);
 }
 
-.caixa{
-    font-size:10vw;
-    text-align:center;
-    padding-top: 50px;   
+.caixa {
+    font-size: 8vw;
+    text-align: center;
+    padding-top: 50px;
 }
 
 nav li {
-	display: inline;
+    display: inline;
     text-align: center;
 }
 
 nav a {
-	text-transform: uppercase;
-	color:aliceblue;	
-	font-size:2.5vw;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 2vw;
     text-decoration: none;
     font-family: FonteTulipa, Courier;
 }
 
-nav a:hover{
-	color:bisque;
+nav a:hover {
+    color: bisque;
 }
 
-nav a:active{
-	color: aquamarine;
+nav a:active {
+    color: aquamarine;
 }
 
-.container_img{
+.container_img {
     position: relative;
     padding: 3vw;
 }
 
-.imagem{
+.imagem {
     border-radius: 10%;
     width: 65vw;
-    box-shadow: 10px 10px 5px lightblue;    
+    box-shadow: 10px 10px 5px lightblue;
 }
 
-#texto{
+#texto {
     font-style: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:aliceblue;
-    font-size: 22px;
-    margin:  3vh 13vw 3vh 13vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    font-size: 1.3rem;
+    margin: 3vh 13vw 3vh 13vw;
 }
 
-.lista li{
-    display:list-item;
-	margin: 0.5em 0.5em;
-	box-sizing: border-box;
+.lista li {
+    display: list-item;
+    margin: 0.5em 0.5em;
+    box-sizing: border-box;
 }
 
-.bandeira{
+.bandeira {
     margin: 1vh;
     border-radius: 15px;
     height: 60vh;
 }
 
-.dexter{
+.dexter {
     margin: 1vh;
     border-radius: 15px;
     width: 40vw;
 }
 
-.rolada{
+.rolada {
     color: aliceblue;
-    background-color:brown;
-    font-family:FonteMedieval, Courier;
+    background-color: brown;
+    font-family: FonteMedieval, Courier;
     font-size: 4.5vh;
     transition: all 0.3s;
     margin: 5%;
@@ -91,19 +91,19 @@ nav a:active{
     cursor: pointer;
 }
 
-.rolada:hover{
+.rolada:hover {
     background-color: blueviolet;
     box-shadow: 1px 1px 10px lightblue;
 }
 
-.caixa_baixa{
-    text-align:center;
-    color:aliceblue;
-    padding-top: 2vh;   
+.caixa_baixa {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 2vh;
 }
 
-footer{
-    background: linear-gradient(chocolate,blueviolet);
+footer {
+    background: linear-gradient(chocolate, blueviolet);
 }
 
 #final {
@@ -114,235 +114,35 @@ footer{
     cursor: pointer;
 }
 
-@font-face{
-    font-family: FonteTulipa;
-    src: url(Ancient-Tulip.ttf);
-}
-
-@font-face{
+.container_txt {
     font-family: FonteMedieval;
-    src: url(MedievalSharp-Book.ttf);
+    font-size: 40px;
+    color: white;
+    margin: 2vh;
 }
 
-body{
-    background: chocolate;
+hr{
+    color: #5A0A80;
 }
 
-header {
-    background: linear-gradient(gray,chocolate);
-}
+@media only screen and (max-width: 700px) {
+    #texto {
+        font-size: 1rem;
+        margin: 3vh 8vw 3vh 8vw;
+    }
 
-.caixa{
-    font-size:10vw;
-    text-align:center;
-    padding-top: 50px;   
-}
+    .bandeira{
+        width: 50vw;
+        height: auto;
+    }
 
-nav li {
-	display: inline;
-    text-align: center;
-}
+    .imagem{
+        width: 80vw;
+        height: auto;
+    }
 
-nav a {
-	text-transform: uppercase;
-	color:aliceblue;	
-	font-size:2.5vw;
-    text-decoration: none;
-    font-family: FonteTulipa, Courier;
+    .dexter{
+        width: 75vw;
+        height: auto;
+    }
 }
-
-nav a:hover{
-	color:bisque;
-}
-
-nav a:active{
-	color: aquamarine;
-}
-
-.container_img{
-    position: relative;
-    padding: 3vw;
-}
-
-.imagem{
-    border-radius: 10%;
-    width: 65vw;
-    box-shadow: 10px 10px 5px lightblue;    
-}
-
-#texto{
-    font-style: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:aliceblue;
-    font-size: 22px;
-    margin:  3vh 13vw 3vh 13vw;
-}
-
-.lista li{
-    display:list-item;
-	margin: 0.5em 0.5em;
-	box-sizing: border-box;
-}
-
-.bandeira{
-    margin: 1vh;
-    border-radius: 15px;
-    height: 60vh;
-}
-
-.dexter{
-    margin: 1vh;
-    border-radius: 15px;
-    width: 40vw;
-}
-
-.rolada{
-    color: aliceblue;
-    background-color:brown;
-    font-family:FonteMedieval, Courier;
-    font-size: 4.5vh;
-    transition: all 0.3s;
-    margin: 5%;
-    border-radius: 15%;
-    cursor: pointer;
-}
-
-.rolada:hover{
-    background-color: blueviolet;
-    box-shadow: 1px 1px 10px lightblue;
-}
-
-.caixa_baixa{
-    text-align:center;
-    color:aliceblue;
-    padding-top: 2vh;   
-}
-
-footer{
-    background: linear-gradient(chocolate,blueviolet);
-}
-
-#final {
-    color: aliceblue;
-    text-align: center;
-    font-family: FonteMedieval, Courier;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-@font-face{
-    font-family: FonteTulipa;
-    src: url(Ancient-Tulip.ttf);
-}
-
-@font-face{
-    font-family: FonteMedieval;
-    src: url(MedievalSharp-Book.ttf);
-}
-
-body{
-    background: chocolate;
-}
-
-header {
-    background: linear-gradient(gray,chocolate);
-}
-
-.caixa{
-    font-size:10vw;
-    text-align:center;
-    padding-top: 50px;   
-}
-
-nav li {
-	display: inline;
-    text-align: center;
-}
-
-nav a {
-	text-transform: uppercase;
-	color:aliceblue;	
-	font-size:2.5vw;
-    text-decoration: none;
-    font-family: FonteTulipa, Courier;
-}
-
-nav a:hover{
-	color:bisque;
-}
-
-nav a:active{
-	color: aquamarine;
-}
-
-.container_img{
-    position: relative;
-    padding: 3vw;
-}
-
-.imagem{
-    border-radius: 10%;
-    width: 65vw;
-    box-shadow: 10px 10px 5px lightblue;    
-}
-
-#texto{
-    font-style: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:aliceblue;
-    font-size: 22px;
-    margin:  3vh 13vw 3vh 13vw;
-}
-
-.lista li{
-    display:list-item;
-	margin: 0.5em 0.5em;
-	box-sizing: border-box;
-}
-
-.bandeira{
-    margin: 1vh;
-    border-radius: 15px;
-    height: 60vh;
-}
-
-.dexter{
-    margin: 1vh;
-    border-radius: 15px;
-    width: 40vw;
-}
-
-.rolada{
-    color: aliceblue;
-    background-color:brown;
-    font-family:FonteMedieval, Courier;
-    font-size: 4.5vh;
-    transition: all 0.3s;
-    margin: 5%;
-    border-radius: 15%;
-    cursor: pointer;
-}
-
-.rolada:hover{
-    background-color: blueviolet;
-    box-shadow: 1px 1px 10px lightblue;
-}
-
-.caixa_baixa{
-    text-align:center;
-    color:aliceblue;
-    padding-top: 2vh;   
-}
-
-footer{
-    background: linear-gradient(chocolate,blueviolet);
-}
-
-#final {
-    color: aliceblue;
-    text-align: center;
-    font-family: FonteMedieval, Courier;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
