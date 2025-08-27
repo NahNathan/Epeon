@@ -45,7 +45,7 @@ nav a:active {
 
 .container_img {
     position: relative;
-    padding: 3vw;
+    padding-top: 3vw;
 }
 
 .imagem {
@@ -127,7 +127,7 @@ footer {
     font-family: FonteMedieval;
     font-size: 40px;
     color: white;
-    margin: 2vh;
+    margin-bottom: 2vh;
 }
 
 hr{
