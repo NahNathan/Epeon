@@ -52,6 +52,7 @@ nav a:active {
     border-radius: 10%;
     width: 65vw;
     box-shadow: 10px 10px 5px lightblue;
+    margin-bottom: 3vh;
 }
 
 #texto {
