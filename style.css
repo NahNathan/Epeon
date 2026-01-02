@@ -19,7 +19,7 @@ header {
 .caixa {
     font-size: 8vw;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 nav li {
@@ -49,10 +49,10 @@ nav a:active {
 }
 
 .imagem {
-    border-radius: 10%;
-    width: 65vw;
-    box-shadow: 10px 10px 5px lightblue;
-    margin-bottom: 3vh;
+    border-radius: 15px;
+    width: 60vw;
+    box-shadow: 5px 5px 5px lightblue;
+    margin-bottom: 5vh;
 }
 
 #texto {
@@ -81,7 +81,7 @@ nav a:active {
 .bandeira {
     margin: 1vh;
     border-radius: 15px;
-    height: 60vh;
+    height: 30vw;
 }
 
 .dexter {
@@ -147,7 +147,7 @@ hr{
     }
 
     .bandeira{
-        width: 50vw;
+        width: 70vw;
         height: auto;
     }
 
