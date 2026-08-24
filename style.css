@@ -59,8 +59,8 @@ nav a:active {
     font-style: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: aliceblue;
-    font-size: 1.4rem;
-    margin: 3vh 10vw 3vh 10vw;
+    font-size: 1.1rem;
+    margin: 3vh 10vw;
 }
 
 #texto-longo{
@@ -68,7 +68,7 @@ nav a:active {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: aliceblue;
     font-size: 1.25rem;
-    margin: 3vh 10vw 3vh 10vw;
+    margin: 3vh 10vw 3vh;
     text-align: left;
 }
 
@@ -137,13 +137,13 @@ hr{
 
 @media only screen and (max-width: 700px) {
     #texto {
-        font-size: 1rem;
-        margin: 3vh 8vw 3vh 8vw;
+        font-size: 0.8rem;
+        margin: 3vh 8vw;
     }
 
     #texto-longo{
         font-size: 1rem;
-        margin: 3vh 8vw 3vh 8vw;
+        margin: 3vh 8vw;
     }
 
     .bandeira{
