@@ -1,126 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="script" href="script.js">
+    <meta name="description" content="Heróis, líderes e vilões notáveis de Epeon.">
+    <meta name="theme-color" content="#d2691e">
+    <title>Personagens · Epeon</title>
     <link rel="icon" href="icon.ico">
-    <title>Epeon</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="topo">
         <div class="caixa">
-            <img class="dexter" src="./Imagens/Logo.png"></img>
-            <nav>
+            <a href="index.html" class="logo-link" aria-label="Epeon — página inicial">
+                <img class="logo" src="./Imagens/Logo.png" alt="Epeon">
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="locais.html">Locais</a></li>
                     <li><a href="divindades.html">Divindades</a></li>
                     <li><a href="mapas.html">Mapas</a></li>
-                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="personagens.html" aria-current="page">Personagens</a></li>
                     <li><a href="extras.html">Extras</a></li>
                     <li><a href="conceitos.html">Conceitos</a></li>
                 </ul>
             </nav>
-            <div id="texto">
-                <hr>
-            </div>
+            <hr class="divisoria-topo">
         </div>
     </header>
 
 
-    <center>
-        <h1 class="container_txt">Heróis Notáveis</h1>
-        <ul>
+    <main class="conteudo">
+        <h1 id="herois-notaveis" class="container_txt">Heróis Notáveis</h1>
+        <ul class="lista">
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/uralan.jpg" class="dexter">
+                    <img src="./Imagens/Personagens/uralan.jpg" class="dexter" alt="Salmonella, Telaski Oavara, Sharon e Kenobi" fetchpriority="high">
                 </div>
 
                 <div class="container_txt">
-                    <p id="texto">Salmonella, Telaski Oavara, Sharon & Kenobi</p>
+                    <p class="texto">Salmonella, Telaski Oavara, Sharon & Kenobi</p>
                 </div>
 
             </li>
 
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/goblinz.jpg" class="dexter">
+                    <img src="./Imagens/Personagens/goblinz.jpg" class="dexter" alt="Salmonella, Telaski Oavara, Sharon e Kenobi em outra aventura" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">Eles de novo</p>
+                    <div class="texto">
+                        <p class="texto">Eles de novo</p>
                     </div>
                 </div>
             </li>
 
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/aulora.png" class="dexter">
+                    <img src="./Imagens/Personagens/aulora.png" class="dexter" alt="Falter, Ninjei, Joerg Quebralâmina, Deógenes, Dr. Pinto, D&#39;Lies, Gupta e Kurt Kobain" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <p id="texto">Falter, Ninjei, Joerg Quebralâmina, Deógenes, Dr. Pinto, D'Lies, Gupta & Kurt Kobain
+                    <p class="texto">Falter, Ninjei, Joerg Quebralâmina, Deógenes, Dr. Pinto, D'Lies, Gupta & Kurt Kobain
                     </p>
                 </div>
 
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/aulora outra.png" class="dexter">
+                    <img src="./Imagens/Personagens/aulora outra.png" class="dexter" alt="O grupo de Aulora em outra aventura" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <p id="texto">Eles de novo</p>
+                    <p class="texto">Eles de novo</p>
                 </div>
 
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/ukrain.png" class="dexter">
+                    <img src="./Imagens/Personagens/ukrain.png" class="dexter" alt="Vétus, Vladiniki, Tenebrius, Polo e Voravoh" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <p id="texto">Vétus, Vladiniki, Tenebrius, Polo & Voravoh</p>
+                    <p class="texto">Vétus, Vladiniki, Tenebrius, Polo & Voravoh</p>
                 </div>
 
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/oneShots.png" class="dexter">
+                    <img src="./Imagens/Personagens/oneShots.png" class="dexter" alt="Personagens de one-shots diversas" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <p id="texto">Johan Couroduro, Yerai, Anvom Von Enkim, Natus Ad Bellum, Sharauto, Morion, Ugrog
+                    <p class="texto">Johan Couroduro, Yerai, Anvom Von Enkim, Natus Ad Bellum, Sharauto, Morion, Ugrog
                         Tragash, Alecsandr Vopos <br>(personagens de one-shots diversas)</p>
                 </div>
 
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/mirafir.png" class="dexter">
+                    <img src="./Imagens/Personagens/mirafir.png" class="dexter" alt="Kiko, Estalo e Angrod" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <p id="texto">Kiko, Estalo & Angrod</p>
+                    <p class="texto">Kiko, Estalo & Angrod</p>
                 </div>
 
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/corn.jpg" class="dexter">
+                    <img src="./Imagens/Personagens/corn.jpg" class="dexter" alt="Salmonella, o ladino lendário" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
 
-                    <p id="texto">Salmonella, sua habilidade para roubo e ardilagem são coisas de lenda. Durante sua
+                    <p class="texto">Salmonella, sua habilidade para roubo e ardilagem são coisas de lenda. Durante sua
                         vida criou vários inimigos, mas também ajudou e inspirou diversas pessoas, principalmente no
                         orfanato em Ohmar em que foi criado<br>—"Como assim, ""suas"" moedas?"</p>
                 </div>
@@ -128,28 +128,28 @@
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/mago.png" class="dexter">
+                    <img src="./Imagens/Personagens/mago.png" class="dexter" alt="Mulo, grande contador de histórias" loading="lazy" decoding="async">
                 </div>
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">Mulo, grande contador de histórias</p>
+                    <div class="texto">
+                        <p class="texto">Mulo, grande contador de histórias</p>
                         <hr>
                     </div>
                 </div>
             </li>
         </ul>
 
-        <h1 class="container_txt">Líderes Notáveis</h1>
-        <ul>
+        <h1 id="lideres-notaveis" class="container_txt">Líderes Notáveis</h1>
+        <ul class="lista">
 
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/pepe.jpg" class="dexter">
+                    <img src="./Imagens/Personagens/pepe.jpg" class="dexter" alt="Rei Pepe" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">Rei Pepe, já falecido, seu espírito ainda habita a Biblioteca Real, seu local
+                    <div class="texto">
+                        <p class="texto">Rei Pepe, já falecido, seu espírito ainda habita a Biblioteca Real, seu local
                             preferido desde sua infância</p>
                     </div>
                 </div>
@@ -157,16 +157,16 @@
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/canario.png" class="dexter">
+                    <img src="./Imagens/Personagens/canario.png" class="dexter" alt="João Canário, rei de Uralan" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">João Canário, uma vez um patrulheiro das áreas selvagens de Uralan, atualmente é o
+                    <div class="texto">
+                        <p class="texto">João Canário, uma vez um patrulheiro das áreas selvagens de Uralan, atualmente é o
                             rei de Uralan, escolhido após se destacar por sua bravura e inteligência nos conflitos ao
                             norte próximos da morte de Pepe. É dito que o real motivo da escolha de Pepe foi o coração e
                             humildade exposta por ele, algo que não encontrou em seus filhos. Atualmente criou vários
-                            inimigos dentro e fora da côrte, mas o público em geral tem tido uma boa opinião sobre suas
+                            inimigos dentro e fora da corte, mas o público em geral tem tido uma boa opinião sobre suas
                             decisões e seu reinado turbulento até o momento </p>
                     </div>
                 </div>
@@ -175,17 +175,17 @@
 
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/david.png" class="dexter">
+                    <img src="./Imagens/Personagens/david.png" class="dexter" alt="David, Imperador de Valryn" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">David, Imperador de Valryn, foi criado como um servo e mensageiro do Rei Pepe em
+                    <div class="texto">
+                        <p class="texto">David, Imperador de Valryn, foi criado como um servo e mensageiro do Rei Pepe em
                             Uralan, se mudou para Valryn ao saber que seu pai, na época imperador, estava guerreando em
                             uma campanha contra Aulora. Grande parte da população estava insatisfeita com estes ataques,
                             além de realizar pouco progresso no frio do norte, então David viu uma oportunidade de ir
                             contra o próprio pai e usurpar o poder dele, se alinhando com Rigotin, reconhecendo Aulora
-                            como independente e trazendo um período de paz à Valryn.</p>
+                            como independente e trazendo um período de paz a Valryn.</p>
                     </div>
                 </div>
 
@@ -193,12 +193,12 @@
 
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/rigotin.png" class="dexter">
+                    <img src="./Imagens/Personagens/rigotin.png" class="dexter" alt="Rei Rigotin de Aulora" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">Rei Rigotin de Aulora, grande estrategista militar e realizou acordos com David
+                    <div class="texto">
+                        <p class="texto">Rei Rigotin de Aulora, grande estrategista militar e realizou acordos com David
                             para encerrar os conflitos na fronteira com Valryn.</p>
                         <hr>
                     </div>
@@ -208,16 +208,16 @@
 
         </ul>
 
-        <h1 class="container_txt">Vilões Notáveis</h1>
-        <ul>
+        <h1 id="viloes-notaveis" class="container_txt">Vilões Notáveis</h1>
+        <ul class="lista">
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/vaper.png" class="dexter">
+                    <img src="./Imagens/Personagens/vaper.png" class="dexter" alt="Vaper" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">Vaper, um antigo estudante dos cavaleiros Dejai, liderou um gigantesco exército em
+                    <div class="texto">
+                        <p class="texto">Vaper, um antigo estudante dos cavaleiros Dejai, liderou um gigantesco exército em
                             Korodai em ataque contra Uralan em 1208 AQ, quase conseguindo seus planos de dominação e
                             obtenção de uma relíquia guardada em Salvaterra, para renascer como um deus.</p>
                     </div>
@@ -225,15 +225,15 @@
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/qarazz.png" class="dexter">
+                    <img src="./Imagens/Personagens/qarazz.png" class="dexter" alt="Qarazz" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">Pouco é conhecido sobre Qarazz, mas histórias e contos dizem que foi um
+                    <div class="texto">
+                        <p class="texto">Pouco é conhecido sobre Qarazz, mas histórias e contos dizem que foi um
                             proeminente
                             artífice de Mechestur, que teve seu corpo destruído em um gigantesco ataque arcano durante
-                            as Guerras Psíquicas. Seu corpo foi reformado e distorcído pela magia estranha, assim como
+                            as Guerras Psíquicas. Seu corpo foi reformado e distorcido pela magia estranha, assim como
                             sua mente. É dito que ele já apareceu em diversos locais em Epeon, e controla uma grande
                             área devastada pela magia em Mechestur, planejando seus próximos passos.</p>
                     </div>
@@ -241,28 +241,28 @@
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/hasof.png" class="dexter">
+                    <img src="./Imagens/Personagens/hasof.png" class="dexter" alt="Hasof, o Abolete" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">Hasof, um dos mais poderosos e antigos Aboletes conhecidos, com sua mente
+                    <div class="texto">
+                        <p class="texto">Hasof, um dos mais poderosos e antigos Aboletes conhecidos, com sua mente
                             persistindo desde antes dos deuses governarem sobre Epeon. Sua influência foi sentida
                             principalmente em Aulora em 1247 AQ, onde seus planos de destruição e inundação mundial para
-                            reconquistar a terra firme foi impedida por heróis e um dragão de prata.</p>
+                            reconquistar a terra firme foram impedidos por heróis e um dragão de prata.</p>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/Personagens/havok.png" class="dexter">
+                    <img src="./Imagens/Personagens/havok.png" class="dexter" alt="Havok, o dragão de ouro" loading="lazy" decoding="async">
                 </div>
 
                 <div class="container_txt">
-                    <div id="texto">
-                        <p id="texto">Havok é um gigantesco dragão de ouro, um dos mais antigos e anciões de todos.
+                    <div class="texto">
+                        <p class="texto">Havok é um gigantesco dragão de ouro, um dos mais antigos e anciões de todos.
                             Estava em um sono profundo nas montanhas de Uk-rain por séculos, até acordar por sentir uma
-                            invasão demôniaca se aproximando. Mesmo sendo uma criatura boa, seus métodos envolviam
+                            invasão demoníaca se aproximando. Mesmo sendo uma criatura boa, seus métodos envolviam
                             destruir qualquer um que não iria ajudá-lo, e aqueles que ele via como fracos demais, e por
                             isso entrou em conflito com um grupo de aventureiros e foi derrotado em 1255 AQ.</p>
                         <hr>
@@ -270,24 +270,21 @@
                 </div>
             </li>
         </ul>
-    </center>
+    </main>
 
-    <footer>
+    <footer class="rodape">
         <div class="caixa_baixa">
-            <p id="texto">Dados para rodar</p><br>
-            <nav>
-                <ul>
-                    <li><button class="rolada" onclick="rolada(4)" id="rolada4">D4 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(6)" id="rolada6">D6 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(8)" id="rolada8">D8 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(10)" id="rolada10">D10 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(12)" id="rolada12">D12 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(20)" id="rolada20">D20 :</button> </li>
-                </ul>
-            </nav>
-            <a href="https://github.com/NahNathan" id="final">Feito por Nathan RDS ☕🗿</a>
+            <h2 class="rodape-titulo">Dados para rodar</h2>
+            <ul class="dados">
+                <li><button type="button" class="rolada" data-dado="4"><span class="dado-nome">D4</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="6"><span class="dado-nome">D6</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="8"><span class="dado-nome">D8</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="10"><span class="dado-nome">D10</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="12"><span class="dado-nome">D12</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="20"><span class="dado-nome">D20</span><span class="dado-valor">–</span></button></li>
+            </ul>
+            <a href="https://github.com/NahNathan" class="assinatura" target="_blank" rel="noopener">Feito por Nathan RDS ☕🗿</a>
         </div>
-        <br> <br> <br> <br> <br> <br>
     </footer>
 
 </body>

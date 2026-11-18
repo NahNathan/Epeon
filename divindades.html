@@ -1,65 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="As 30 divindades de Epeon, seus domínios e seguidores.">
+    <meta name="theme-color" content="#d2691e">
+    <title>Divindades · Epeon</title>
+    <link rel="icon" href="icon.ico">
     <link rel="stylesheet" href="reset.css">
-    <link rel="script" href="script.js">
-
-    <title>Epeon</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="topo">
         <div class="caixa">
-            <img class="dexter" src="./Imagens/Logo.png"></img>
-            <nav>
+            <a href="index.html" class="logo-link" aria-label="Epeon — página inicial">
+                <img class="logo" src="./Imagens/Logo.png" alt="Epeon">
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="locais.html">Locais</a></li>
-                    <li><a href="divindades.html">Divindades</a></li>
+                    <li><a href="divindades.html" aria-current="page">Divindades</a></li>
                     <li><a href="mapas.html">Mapas</a></li>
                     <li><a href="personagens.html">Personagens</a></li>
                     <li><a href="extras.html">Extras</a></li>
                     <li><a href="conceitos.html">Conceitos</a></li>
                 </ul>
             </nav>
-            <div id="texto">
-                <hr>
-            </div>
+            <hr class="divisoria-topo">
         </div>
     </header>
 
-    <center>
-        <ul>
+    <main class="conteudo">
+        <ul class="lista">
 
             <li>
                 <div class="container_img">
-                    <a href="./Imagens/Deuseskk.png">
-                        <img src="./Imagens/Deuseskk.png" class="imagem">
+                    <a href="./Imagens/Deuseskk.png" target="_blank" rel="noopener">
+                        <img src="./Imagens/Deuseskk.png" class="imagem" alt="As 30 divindades de Epeon organizadas por alinhamento" fetchpriority="high">
                     </a>
-                    <div id="texto-longo">Nessa representação, as 30 divindades estão organizadas na clássica divisão de
+                    <div class="texto-longo">Nessa representação, as 30 divindades estão organizadas na clássica divisão de
                         alinhamento. Isso é mais um guia geral e não regras que se aplicam sempre, mas no geral, deuses
                         mais acima costumam ser bons, estando atentos ao bem-estar dos outros, não apenas seus
                         seguidores. Já deuses mais abaixo costumam ser malignos, colocando suas próprias vontades,
-                        desejos e de seus seguidoes acima da vida de todos os outros. Agora, deuses mais à esquerda são
+                        desejos e de seus seguidores acima da vida de todos os outros. Agora, deuses mais à esquerda são
                         leais, e geralmente possuem regras, práticas e cerimônias muito bem estruturadas, que devem ser
-                        seguidas de maneira correta. Deuses à direita não costumam ter cerimônicas com ordens muito bem
-                        definidas ou estritas, ou mesmo as mesmas práticas à grupos ou pessoas diferentes, focando mais
-                        em estilos de vida e costumes do dia-a-dia. Deuses que
-                        ficam ao meio destes dois eixos estão no meio termo destes aspectos, variando dependendo do caso
+                        seguidas de maneira correta. Deuses à direita não costumam ter cerimônias com ordens muito bem
+                        definidas ou estritas, ou mesmo as mesmas práticas a grupos ou pessoas diferentes, focando mais
+                        em estilos de vida e costumes do dia a dia. Deuses que
+                        ficam ao meio destes dois eixos estão no meio-termo destes aspectos, variando dependendo do caso
                         específico.</div>
                 </div>
 
-                <div id="texto-longo">
-                    "Sim sim, os deuses são muitos poderosos, governantes supremos da nossa vida. Mas, nem sempre
+                <div class="texto-longo">
+                    "Sim sim, os deuses são muito poderosos, governantes supremos da nossa vida. Mas, nem sempre
                     foi assim. Está escrito em escrituras antigas, textos há muito tempo perdidos, os deuses que
-                    existem hoje antes pertenciam a mesma entidade. Uma mente primoridal, infinitamente mais
+                    existem hoje antes pertenciam à mesma entidade. Uma mente primordial, infinitamente mais
                     poderosa do que qualquer deus. Foi essa mente que criou o que você está vendo, o chão, o
                     mar, as luas, tudo. Mas isso demandou muita energia para essa mente, e ela se quebrou e se
                     separou em pequenas partes menores, menos poderosas. Quando essas mentes menores se deram
@@ -67,18 +66,20 @@
                     que já estava aqui. E aí é que está: sabe quando dizem que você sempre coloca um pouco de
                     você em tudo o que faz? Um pouco da consciência primordial caiu em sua própria criação.
                     Chamamos esse "pouco" de alma. Isso que nos diferencia de animais que não pensam: tivemos
-                    sorte."—Voron, gnomo andarilho</p>
+                    sorte."—Voron, gnomo andarilho
                     <hr>
                 </div>
             </li>
 
-            <ul>
+            </ul>
+
+        <ul class="lista">
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Markellös</h1>
-                        <img src="./ArteDeuses/Markellos.png" class="bandeira">
-                        <p id="texto">Luz, Clareza</p>
-                        <p id="texto-longo">Markellos é adorado como o deus da luz, simbolizando verdade, lealdade,
+                        <h1 id="markellos" class="container_txt">Markellös</h1>
+                        <img src="./ArteDeuses/Markellos.png" class="bandeira" alt="Arte de Markellös" loading="lazy" decoding="async">
+                        <p class="dominios">Luz, Clareza</p>
+                        <p class="texto-longo">Markellos é adorado como o deus da luz, simbolizando verdade, lealdade,
                             bondade e
                             entendimento. Normalmente
                             aparece como um grande homem forte e careca, vestindo vestes brancas e pedaços dourados de
@@ -97,38 +98,38 @@
                             para os perdidos, um defensor dos fracos."<br>—Saom, alto clérigo do Monastério da Luz da
                             cidade de Sharne
                         </p>
-                        <img src="./Deuses/Markellos.png" class="imagem">
+                        <img src="./Deuses/Markellos.png" class="imagem" alt="Ficha de Markellös: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Shereon</h1>
-                        <img src="./ArteDeuses/Shereon.png" class="bandeira">
-                        <p id="texto">Força, Coragem, Resiliência, Humildade, Auto-Determinação</p>
-                        <p id="texto-longo">Aparentando ser um grande e forte homem usando roupas humildes de
+                        <h1 id="shereon" class="container_txt">Shereon</h1>
+                        <img src="./ArteDeuses/Shereon.png" class="bandeira" alt="Arte de Shereon" loading="lazy" decoding="async">
+                        <p class="dominios">Força, Coragem, Resiliência, Humildade, Autodeterminação</p>
+                        <p class="texto-longo">Aparentando ser um grande e forte homem usando roupas humildes de
                             fazendeiro,
                             Shereon representa a força, resiliência e potência do povo comum, assim como a coragem de
                             heróis contra adversidades maiores do que eles mesmos. Seus adoradores também costumam
                             treinar seus corpos para o ápice da força e resistência possível. Shereon se destaca de
                             entre os deuses por não tentar comandar o destino de outros mortais, em vez disto
-                            ajudando-os à perceber o verdadeiro potencial deles mesmos.
+                            ajudando-os a perceber o verdadeiro potencial deles mesmos.
                             <br>"Shereon nos representa completamente. Ele não demanda muito de nós, apenas que nos
                             esforcemos de acordo com nosso potencial, muitas vezes muito maior do que imaginamos. Nosso
                             corpo assim como todos os nossos aspectos de nossa vida, nos foi dado e por isso devemos
                             cuidar dele, e treiná-lo para alcançar nosso máximo" <br>—Johon "A Pedra", Mago da Força de
                             Palsam
                         </p>
-                        <img src="./Deuses/Shereon.png" class="imagem">
+                        <img src="./Deuses/Shereon.png" class="imagem" alt="Ficha de Shereon: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Sumac</h1>
-                        <img src="./ArteDeuses/Sumac.png" class="bandeira">
-                        <p id="texto">Conhecimento, Sabedoria, Estudos</p>
-                        <p id="texto-longo">Principalmente adorado como um professor ou ensinador, Sumac é o mais
+                        <h1 id="sumac" class="container_txt">Sumac</h1>
+                        <img src="./ArteDeuses/Sumac.png" class="bandeira" alt="Arte de Sumac" loading="lazy" decoding="async">
+                        <p class="dominios">Conhecimento, Sabedoria, Estudos</p>
+                        <p class="texto-longo">Principalmente adorado como um professor ou ensinador, Sumac é o mais
                             inteligente
                             dos deuses e também o mais paciente. Como deus do conhecimento, costuma abençoar estudantes,
                             pesquisadores,
@@ -143,36 +144,36 @@
                             apenas em acumular conhecimento, mas em sua aplicação sábia para o bem maior."<br>—Luma,
                             chefe da Alta Biblioteca do Lago
                         </p>
-                        <img src="./Deuses/Sumac.png" class="imagem">
+                        <img src="./Deuses/Sumac.png" class="imagem" alt="Ficha de Sumac: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Creon</h1>
-                        <img src="./ArteDeuses/Creon.png" class="bandeira">
-                        <p id="texto">Agricultura, Prosperidade, Alimentação</p>
-                        <p id="texto-longo">Aparecendo como um velho homem segurando uma foice e um barril com hidromel,
+                        <h1 id="creon" class="container_txt">Creon</h1>
+                        <img src="./ArteDeuses/Creon.png" class="bandeira" alt="Arte de Creon" loading="lazy" decoding="async">
+                        <p class="dominios">Agricultura, Prosperidade, Alimentação</p>
+                        <p class="texto-longo">Aparecendo como um velho homem segurando uma foice e um barril com hidromel,
                             Creon é venerado por trazer bons tempos, boas colheitas e a saúde das plantas e criações de
-                            civilações. Também é associdado com os produtos da colheita, é dito que os métodos de
-                            preparação de alimentos e bebidas foram dados por ele, quando humanóides ainda eram novos em
-                            Epeon. Creon também é associado à diversas festas e celebrações de diferentes povos,
-                            grandemente associado à boas colheitas.
-                            <br>"Creon é sem dúvida o deus mais importante por esssas bandas. Suas vontades e
+                            civilizações. Também é associado com os produtos da colheita, é dito que os métodos de
+                            preparação de alimentos e bebidas foram dados por ele, quando humanoides ainda eram novos em
+                            Epeon. Creon também é associado a diversas festas e celebrações de diferentes povos,
+                            grandemente associado a boas colheitas.
+                            <br>"Creon é sem dúvida o deus mais importante por essas bandas. Suas vontades e
                             necessidades são previsíveis, precisamos apenas nos abrir para ouvir e obedecer, e claro, ao
-                            tempo certo, nós alegrarmos e festejarmos as recompensas de nosso trabalho."<br>—Biuli,
+                            tempo certo, nos alegrarmos e festejarmos as recompensas de nosso trabalho."<br>—Biuli,
                             Mestre das terras douradas de Alakan
                         </p>
-                        <img src="./Deuses/Creon.png" class="imagem">
+                        <img src="./Deuses/Creon.png" class="imagem" alt="Ficha de Creon: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Teveri</h1>
-                        <img src="./ArteDeuses/Teveri.png" class="bandeira">
-                        <p id="texto">Mineração, Cavernas, Montanhas</p>
-                        <p id="texto-longo">Provavelmente o deus mais venerado por anões, Teveri é associado com metais,
+                        <h1 id="teveri" class="container_txt">Teveri</h1>
+                        <img src="./ArteDeuses/Teveri.png" class="bandeira" alt="Arte de Teveri" loading="lazy" decoding="async">
+                        <p class="dominios">Mineração, Cavernas, Montanhas</p>
+                        <p class="texto-longo">Provavelmente o deus mais venerado por anões, Teveri é associado com metais,
                             gemas, joias, e tudo que provém da mineração. Seus clérigos utilizam de suas visões para
                             localizar novas veias de minérios e quais os locais mais vantajosos para se explorar dentro
                             de montanhas. Alguns sacerdotes anões o consideram como um irmão de Bakevid, mas claramente
@@ -182,35 +183,35 @@
                             de arte, e a mais integral para nossa sobrevivência"<br>— Brunom Barbescura, Rei Sacerdote
                             da cidade escondida de Statio
                         </p>
-                        <img src="./Deuses/Teveri.png" class="imagem">
+                        <img src="./Deuses/Teveri.png" class="imagem" alt="Ficha de Teveri: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Rêvene</h1>
-                        <img src="./ArteDeuses/Revene.png" class="bandeira">
-                        <p id="texto">Sonhos, Sono</p>
-                        <p id="texto-longo">Aparecendo como uma mulher com os olhos cobertos, e a pele escura com pontos
+                        <h1 id="revene" class="container_txt">Rêvene</h1>
+                        <img src="./ArteDeuses/Revene.png" class="bandeira" alt="Arte de Rêvene" loading="lazy" decoding="async">
+                        <p class="dominios">Sonhos, Sono</p>
+                        <p class="texto-longo">Aparecendo como uma mulher com os olhos cobertos, e a pele escura com pontos
                             cintilantes como o céu noturno, Rêneve é associada com sonhos e a noite, revelando segredos,
                             mostrando situações variadas ou qualquer outra aparição quando a mente adormece. Porém nem
-                            mesmo seus clérigos tem total certeza das motivações da deusa com seus sonhos, que são às
-                            vezes sem sentido, mas quase todos podem ser interpretados com algun significado importante.
+                            mesmo seus clérigos têm total certeza das motivações da deusa com seus sonhos, que são às
+                            vezes sem sentido, mas quase todos podem ser interpretados com algum significado importante.
                             <br>"Para muitos, sonhos são apenas situações estranhas que ocorrem quando dormimos, e logo
                             os esquecemos. Mas Rêvene nos revela que são muito mais que isso. Não é ela que causa os
                             sonhos, mas com sua ajuda, podemos decifrar seus segredos profundos e obter tudo o que
-                            precisamos deles."<br>—Mérea, Sacedortiza do Templo Noturno de Folski
+                            precisamos deles."<br>—Mérea, Sacerdotisa do Templo Noturno de Folski
                         </p>
-                        <img src="./Deuses/Revene.png" class="imagem">
+                        <img src="./Deuses/Revene.png" class="imagem" alt="Ficha de Rêvene: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Itris</h1>
-                        <img src="./ArteDeuses/Itris.png" class="bandeira">
-                        <p id="texto">Crepúsculo, Lua, Noite, Viajantes</p>
-                        <p id="texto-longo">Com a aparência de uma mulher com a pele completamente dourada, Itris é a
+                        <h1 id="itris" class="container_txt">Itris</h1>
+                        <img src="./ArteDeuses/Itris.png" class="bandeira" alt="Arte de Itris" loading="lazy" decoding="async">
+                        <p class="dominios">Crepúsculo, Lua, Noite, Viajantes</p>
+                        <p class="texto-longo">Com a aparência de uma mulher com a pele completamente dourada, Itris é a
                             deusa
                             do crepúsculo, é associada às luas e suas luzes. Aqueles que a seguem lealmente protegem
                             viajantes,
@@ -221,16 +222,16 @@
                             próprias vidas. Sua luz é um símbolo de renovação, prometendo um novo amanhecer após a noite
                             mais escura."<br>—Miashau, Alto do Mestre do Monastério do Pico Rubro
                         </p>
-                        <img src="./Deuses/Itris.png" class="imagem">
+                        <img src="./Deuses/Itris.png" class="imagem" alt="Ficha de Itris: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Syrinx</h1>
-                        <img src="./ArteDeuses/Syrinx.png" class="bandeira">
-                        <p id="texto">Justiça, Cidades</p>
-                        <p id="texto-longo">Normalmente aparecendo como uma mulher alta vestindo armadura pesada, Syrinx
+                        <h1 id="syrinx" class="container_txt">Syrinx</h1>
+                        <img src="./ArteDeuses/Syrinx.png" class="bandeira" alt="Arte de Syrinx" loading="lazy" decoding="async">
+                        <p class="dominios">Justiça, Cidades</p>
+                        <p class="texto-longo">Normalmente aparecendo como uma mulher alta vestindo armadura pesada, Syrinx
                             é a
                             deusa
                             da ordem, também conhecida como a juíza suprema. Adorada por certos juízes e líderes que
@@ -240,109 +241,109 @@
                             da natureza
                             <br>"Assim como uma semente não pode se fixar e crescer, nem uma sociedade pode se
                             desenvolver sem ordem. Sem o trabalho árduo, ordenado, controlado e medido é impossível
-                            contruir navios, torres, plantações, nem os mais simples alicerces da sociedade. Syrinx é a
+                            construir navios, torres, plantações, nem os mais simples alicerces da sociedade. Syrinx é a
                             barreira entre a sociedade e o absoluto caos, e nós somos seus vigias. Mas Syrinx também
                             representa a ordem natural do mundo, a harmonia que deve existir entre todas as coisas. Seu
                             domínio não se limita às leis feitas pelo homem, mas abrange as regras não escritas que
-                            governam a existência."<br>—Buir Gonles, Juíz da cidade de Urs
+                            governam a existência."<br>—Buir Gonles, Juiz da cidade de Urs
                         </p>
-                        <img src="./Deuses/Syrinx.png" class="imagem">
+                        <img src="./Deuses/Syrinx.png" class="imagem" alt="Ficha de Syrinx: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Nimrodel</h1>
-                        <img src="./ArteDeuses/Nimrodel.png" class="bandeira">
-                        <p id="texto">Paz, Calma</p>
-                        <p id="texto-longo">Sempre em busca e resolver conflitos e discussões, Nimrodel é a deusa da paz
+                        <h1 id="nimrodel" class="container_txt">Nimrodel</h1>
+                        <img src="./ArteDeuses/Nimrodel.png" class="bandeira" alt="Arte de Nimrodel" loading="lazy" decoding="async">
+                        <p class="dominios">Paz, Calma</p>
+                        <p class="texto-longo">Sempre em busca de resolver conflitos e discussões, Nimrodel é a deusa da paz
                             e
                             sempre usa roupas brancas para simbolizar isso. Seus seguidores estão quase sempre presentes
                             em
-                            cortes judicias, tratados entre povos e em salões reais. Seu cajado consegue apaziguar e
+                            cortes judiciais, tratados entre povos e em salões reais. Seu cajado consegue apaziguar e
                             acalmar as emoções
                             de qualquer um que o tocar
                             <br>"Senhora da Paz e Calma, Nimrodel nos ensina, acima de tudo, a entender que nossos
                             conflitos internos, em nossa mente e alma, não têm poder sobre nossos seres, se não
                             deixarmos. Ela nos ensina a dominar nossos problemas, medos e anseios, e retomar controle
-                            sobre nossa existência. Paz exterior é impossível de se alcançar sem antes houver paz
+                            sobre nossa existência. Paz exterior é impossível de se alcançar sem antes haver paz
                             interior. E mais, Nimrodel nos mostra que a verdadeira força não vem da ação, mas da
                             serenidade e do domínio sobre si mesmo."<br>—Astur, Grão conselheiro do trono de Brilon
                         </p>
-                        <img src="./Deuses/Nimrodel.png" class="imagem">
+                        <img src="./Deuses/Nimrodel.png" class="imagem" alt="Ficha de Nimrodel: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Fortuna</h1>
-                        <img src="./ArteDeuses/Fortuna.png" class="bandeira">
-                        <p id="texto">Sorte, Jogos, Destino</p>
-                        <p id="texto-longo">Conhecida como a deusa da sorte, Fortuna é adorada por todos os tipos de
+                        <h1 id="fortuna" class="container_txt">Fortuna</h1>
+                        <img src="./ArteDeuses/Fortuna.png" class="bandeira" alt="Arte de Fortuna" loading="lazy" decoding="async">
+                        <p class="dominios">Sorte, Jogos, Destino</p>
+                        <p class="texto-longo">Conhecida como a deusa da sorte, Fortuna é adorada por todos os tipos de
                             pessoas, além de ser muito venerada por Halflings. Seu símbolo é uma roda, que
-                            representa o mudança constante, prometendo sempre novas possibilidades, melhores ou piores.
+                            representa a mudança constante, prometendo sempre novas possibilidades, melhores ou piores.
                             Também é muito associada com jogos de vários tipos, não apenas de apostas.
                             <br>"Fortuna tem controle sobre aquilo além do controle mortal, e nos ensina que ninguém
                             permanece no topo para sempre, assim como nenhuma situação é sem esperança."<br>—Bernet,
                             Alto Clérigo de Rioabá, durante os Festivais de Carmim logo após ganhar um jogo de cartas.
                         </p>
-                        <img src="./Deuses/Fortuna.png" class="imagem">
+                        <img src="./Deuses/Fortuna.png" class="imagem" alt="Ficha de Fortuna: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Bakevid</h1>
-                        <img src="./ArteDeuses/Bakevid.png" class="bandeira">
-                        <p id="texto">Forja, Artesãos, Criação</p>
-                        <p id="texto-longo">Senhor do Fogo eterno, Bakevid é o deus da forja e de todos aqueles que
+                        <h1 id="bakevid" class="container_txt">Bakevid</h1>
+                        <img src="./ArteDeuses/Bakevid.png" class="bandeira" alt="Arte de Bakevid" loading="lazy" decoding="async">
+                        <p class="dominios">Forja, Artesãos, Criação</p>
+                        <p class="texto-longo">Senhor do Fogo eterno, Bakevid é o deus da forja e de todos aqueles que
                             trabalham
                             duro
-                            para criar algo físico, como artistas e artesões. Aparecendo como um homem de baixa estatura
+                            para criar algo físico, como artistas e artesãos. Aparecendo como um homem de baixa estatura
                             e pele
-                            ferrosa, Bakevid é o mestre inúmeras técnicas de artesanatos assim como um patrono da
+                            ferrosa, Bakevid é o mestre de inúmeras técnicas de artesanatos assim como um patrono da
                             inovação e criatividade.
                             Seus servos sempre irão ter aprendizado em alguma área, tentando se assemelhar em habilidade
-                            à Bakevid assim
+                            a Bakevid assim
                             como espalhar ao máximo esse conhecimento
                             <br>"Em tempos antigos, durante a grande guerra contra os horrores antigos e maléficos
                             do passado, Bakevid acertou com sua arma o lado do monte Urud, onde este templo foi
-                            contruído. Seu poder divino é tão poderoso que os fragmentos da montanha foram banhados com
+                            construído. Seu poder divino é tão poderoso que os fragmentos da montanha foram banhados com
                             energia da criação, e se levantaram como uma nova raça, fortes e imóveis como a própria
                             rocha: os anões. E ainda hoje, sua força nos inspira, lembrando-nos de que, mesmo nas
                             adversidades mais duras, podemos encontrar a força para superá-las."<br>—Caudir Dum, Alto
                             Clérigo do Templo da Forja Celeste em Gongur
                         </p>
-                        <img src="./Deuses/Bakevid.png" class="imagem">
+                        <img src="./Deuses/Bakevid.png" class="imagem" alt="Ficha de Bakevid: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Évera</h1>
-                        <img src="./ArteDeuses/Evera.png" class="bandeira">
-                        <p id="texto">Frio, Inverno, Ventos</p>
-                        <p id="texto-longo">Muitas vezes venerada por temor, Évera é a deusa do frio e gelo, assim como
+                        <h1 id="evera" class="container_txt">Évera</h1>
+                        <img src="./ArteDeuses/Evera.png" class="bandeira" alt="Arte de Évera" loading="lazy" decoding="async">
+                        <p class="dominios">Frio, Inverno, Ventos</p>
+                        <p class="texto-longo">Muitas vezes venerada por temor, Évera é a deusa do frio e gelo, assim como
                             a fome e dificuldades que acompanham estes aspectos. Évera e seus seguidores acreditam que
                             os tempos difíceis necessários representados pelo frio extremo estão presentes para servir
                             como um filtro inevitável da existência, onde apenas os resilientes persistem e aprendem a
-                            prosperar sob o julgo do inverno.
+                            prosperar sob o jugo do inverno.
                             <br>"Évera é dura, mesmo com seus seguidores. Principalmente conosco na verdade. Suas provas
                             são uma alegria para nós, porque ela nos olha com bons olhos quando sobrevivemos e passamos
                             por seus testes. Ela não se importa muito se gostamos dela, ou se discordamos, ou a
                             ignoramos, ela se importa com nossas habilidades, por isso descansar nunca é um luxo que
                             abusamos"<br>—Ekesa, Chefe da Torre Branca de Fátimos
                         </p>
-                        <img src="./Deuses/Evera.png" class="imagem">
+                        <img src="./Deuses/Evera.png" class="imagem" alt="Ficha de Évera: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Betem</h1>
-                        <img src="./ArteDeuses/Betem.png" class="bandeira">
-                        <p id="texto">Caça, Terras Selvagens</p>
-                        <p id="texto-longo">Betem é uma divindade primordial que incorpora os aspectos da natureza
+                        <h1 id="betem" class="container_txt">Betem</h1>
+                        <img src="./ArteDeuses/Betem.png" class="bandeira" alt="Arte de Betem" loading="lazy" decoding="async">
+                        <p class="dominios">Caça, Terras Selvagens</p>
+                        <p class="texto-longo">Betem é uma divindade primordial que incorpora os aspectos da natureza
                             primordial não controlada, e as forças de dominação presentes nela. Por sua força de vontade
                             e resposta rápida, é muitas vezes adorada por criaturas malignas, como hobgoblins ou orcs,
                             que ela aceita com prazer.
@@ -352,16 +353,16 @@
                             mão as bênçãos de Betem, e vai ser a nossa primeira caça do dia"<br>—Gualardokim, Capitã do
                             Machado Rocho de Korodai
                         </p>
-                        <img src="./Deuses/Betem.png" class="imagem">
+                        <img src="./Deuses/Betem.png" class="imagem" alt="Ficha de Betem: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Dharma</h1>
-                        <img src="./ArteDeuses/Dharma.png" class="bandeira">
-                        <p id="texto">Morte</p>
-                        <p id="texto-longo">Geralmente aparecendo como uma figura esquelética envolta de mantos negros e
+                        <h1 id="dharma" class="container_txt">Dharma</h1>
+                        <img src="./ArteDeuses/Dharma.png" class="bandeira" alt="Arte de Dharma" loading="lazy" decoding="async">
+                        <p class="dominios">Morte</p>
+                        <p class="texto-longo">Geralmente aparecendo como uma figura esquelética envolta de mantos negros e
                             roxos, Dharma
                             é o deus da morte, dor, decadência e também de novos começos. Sempre carregando uma foice
                             brilhante, seus
@@ -376,19 +377,19 @@
                             talvez até uma mais plena e livre."<br>—Estalo, Kenku clérigo, encontrado nos arredores de
                             Sharne
                         </p>
-                        <img src="./Deuses/Dharma.png" class="imagem">
+                        <img src="./Deuses/Dharma.png" class="imagem" alt="Ficha de Dharma: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Eloy</h1>
-                        <img src="./ArteDeuses/Eloy.png" class="bandeira">
-                        <p id="texto">Magia, Magos</p>
-                        <p id="texto-longo">Adorada por vários magos, feiticeiros e outros estudantes, Eloy é associada
+                        <h1 id="eloy" class="container_txt">Eloy</h1>
+                        <img src="./ArteDeuses/Eloy.png" class="bandeira" alt="Arte de Eloy" loading="lazy" decoding="async">
+                        <p class="dominios">Magia, Magos</p>
+                        <p class="texto-longo">Adorada por vários magos, feiticeiros e outros estudantes, Eloy é associada
                             à
                             magia e
-                            outros aspectos inesplicáveis do mundo natural. É uma força caótica e imprevisível, e seus
+                            outros aspectos inexplicáveis do mundo natural. É uma força caótica e imprevisível, e seus
                             seguidores
                             quase sempre são iguais
                             <br>"Como uma rede, a influência de Eloy se estende sobre a realidade. Este é o
@@ -399,17 +400,17 @@
                             vem da compreensão profunda da natureza fundamental do universo."<br>—Lilier, Ensinadora da
                             Escola Arcana do Lago
                         </p>
-                        <img src="./Deuses/Eloy.png" class="imagem">
+                        <img src="./Deuses/Eloy.png" class="imagem" alt="Ficha de Eloy: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Nya</h1>
-                        <img src="./ArteDeuses/Nya.png" class="bandeira">
-                        <p id="texto">Loucura, Festas</p>
-                        <p id="texto-longo">Uma das deusas mais enigmáticas, Nya é conhecida como a deusa da loucura e
-                            confusão, e seus seguidores mais ávidos muitas vezes tem suas mentes completamente alteradas
+                        <h1 id="nya" class="container_txt">Nya</h1>
+                        <img src="./ArteDeuses/Nya.png" class="bandeira" alt="Arte de Nya" loading="lazy" decoding="async">
+                        <p class="dominios">Loucura, Festas</p>
+                        <p class="texto-longo">Uma das deusas mais enigmáticas, Nya é conhecida como a deusa da loucura e
+                            confusão, e seus seguidores mais ávidos muitas vezes têm suas mentes completamente alteradas
                             pelo poder da deusa. Por outro lado, Nya também representa uma certa diversão que vem com
                             sua loucura, sendo associada muitas vezes com festas e banquetes extravagantes. Nya também
                             tem uma certa conexão com o caos primordial da criação de todas as coisas, seus seguidores
@@ -417,41 +418,41 @@
                             <br>"Na escuridão é que se encontra a paz. Se você tem medo do escuro, está perdendo a sua
                             única oportunidade de descansar neste mundo."<br>—Maeno, Mestre Andarilho de Yuneiro
                         </p>
-                        <img src="./Deuses/Nya.png" class="imagem">
+                        <img src="./Deuses/Nya.png" class="imagem" alt="Ficha de Nya: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Mesphine</h1>
-                        <img src="./ArteDeuses/Mesphine.png" class="bandeira">
-                        <p id="texto">Mares, Tempestades, Desastres, Renovação</p>
-                        <p id="texto-longo">Associada à todos os tipos de eventos destrutivos, Mesphine é geralmente
+                        <h1 id="mesphine" class="container_txt">Mesphine</h1>
+                        <img src="./ArteDeuses/Mesphine.png" class="bandeira" alt="Arte de Mesphine" loading="lazy" decoding="async">
+                        <p class="dominios">Mares, Tempestades, Desastres, Renovação</p>
+                        <p class="texto-longo">Associada a todos os tipos de eventos destrutivos, Mesphine é geralmente
                             adorada
                             por
                             marinheiros e também exploradores e fazendeiros para se protegerem de eventos
-                            catrastróficos. Por mais
+                            catastróficos. Por mais
                             que seus pontos de destruição pareçam aleatórios, Mesphine diz assim como seus seguidores
                             que todos têm
                             um propósito específico e importante.
                             <br>"Terremotos, erupções, furacões, tempestades... Tudo isso parece inevitável.
-                            Forças primordias de um mundo muito maior do que nós. De fato, são inevitáveis, em algum
-                            momento sempre chegam, sepalhando destruição para todos igualmente. O que a senhora Mesphine
+                            Forças primordiais de um mundo muito maior do que nós. De fato, são inevitáveis, em algum
+                            momento sempre chegam, espalhando destruição para todos igualmente. O que a senhora Mesphine
                             faz por nós, é apenas adiar nossa destruição. E mais, ela nos ensina a respeitar e conviver
                             com as forças da natureza, não como adversários, mas como parte integrante do mundo que
                             habitamos, em harmonia e respeito mútuo."<br>—Adugar, Clérigo Marinheiro Chefe da frota de
                             Calamaro
                         </p>
-                        <img src="./Deuses/Mesphine.png" class="imagem">
+                        <img src="./Deuses/Mesphine.png" class="imagem" alt="Ficha de Mesphine: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Emmem</h1>
-                        <img src="./ArteDeuses/Emmem.png" class="bandeira">
-                        <p id="texto">Fogo, Calor, Verão, Queimadas</p>
-                        <p id="texto-longo">Emmem simboliza todo o espctro do fogo e calor, desde a leve chama que pode
+                        <h1 id="emmem" class="container_txt">Emmem</h1>
+                        <img src="./ArteDeuses/Emmem.png" class="bandeira" alt="Arte de Emmem" loading="lazy" decoding="async">
+                        <p class="dominios">Fogo, Calor, Verão, Queimadas</p>
+                        <p class="texto-longo">Emmem simboliza todo o espectro do fogo e calor, desde a leve chama que pode
                             esquentar um viajante, até as gigantescas queimadas que destroem impérios. Sua ira é
                             incomparável entre os deuses, e pode ser direcionada aos inimigos de seus seguidores, por
                             isso muitas vezes é venerado por criaturas malignas.
@@ -459,16 +460,16 @@
                             te proteger e esquentar, quanto queimá-lo. Pessoalmente, eu gosto mais do fato de poder
                             queimar meus inimigos."<br>—Filis, Alta Princesa da cidade de Zoroastris
                         </p>
-                        <img src="./Deuses/Emmem.png" class="imagem">
+                        <img src="./Deuses/Emmem.png" class="imagem" alt="Ficha de Emmem: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Sel</h1>
-                        <img src="./ArteDeuses/Sel.png" class="bandeira">
-                        <p id="texto">Violência, Assassinato, Desordem</p>
-                        <p id="texto-longo">Associado com atos de violência, confusão e renegados, Sel muitas vezes toma
+                        <h1 id="sel" class="container_txt">Sel</h1>
+                        <img src="./ArteDeuses/Sel.png" class="bandeira" alt="Arte de Sel" loading="lazy" decoding="async">
+                        <p class="dominios">Violência, Assassinato, Desordem</p>
+                        <p class="texto-longo">Associado com atos de violência, confusão e renegados, Sel muitas vezes toma
                             uma posição como desafiador entre os outros deuses, principalmente contra Markellos. Seus
                             seguidores muitas vezes o servem em segredo, considerando sua violência e brutalidade como
                             forças naturais e necessárias para a defesa e proteção de Epeon contra forças opostas aos
@@ -478,16 +479,16 @@
                             Andarilho
                             das tavernas de Tukh
                         </p>
-                        <img src="./Deuses/Sel.png" class="imagem">
+                        <img src="./Deuses/Sel.png" class="imagem" alt="Ficha de Sel: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Shäd</h1>
-                        <img src="./ArteDeuses/Shad.png" class="bandeira">
-                        <p id="texto">Guerra, Conflito, Dedicação, Estratégia</p>
-                        <p id="texto-longo">Absoluto senhor de todas as formas de combate, Shad é o deus da guerra e
+                        <h1 id="shad" class="container_txt">Shäd</h1>
+                        <img src="./ArteDeuses/Shad.png" class="bandeira" alt="Arte de Shäd" loading="lazy" decoding="async">
+                        <p class="dominios">Guerra, Conflito, Dedicação, Estratégia</p>
+                        <p class="texto-longo">Absoluto senhor de todas as formas de combate, Shad é o deus da guerra e
                             combate, assim
                             como estratégia e a glória associada à vitória. Normalmente aparece como um homem carregando
                             todos
@@ -502,16 +503,16 @@
                             bruto fazer isto. Shäd nos ensina o valor da força controlada, a importância da disciplina e
                             do autocontrole em todas as facetas da vida."<br>—Tiran, Alto General da Colina Vermelha
                         </p>
-                        <img src="./Deuses/Shad.png" class="imagem">
+                        <img src="./Deuses/Shad.png" class="imagem" alt="Ficha de Shäd: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Voler</h1>
-                        <img src="./ArteDeuses/Voler.png" class="bandeira">
-                        <p id="texto">Enganação, Ladrões, Forasteiros, Jogos</p>
-                        <p id="texto-longo">Um dos deuses mais imprevisíveis e caóticos de todos, Voler é o deus da
+                        <h1 id="voler" class="container_txt">Voler</h1>
+                        <img src="./ArteDeuses/Voler.png" class="bandeira" alt="Arte de Voler" loading="lazy" decoding="async">
+                        <p class="dominios">Enganação, Ladrões, Forasteiros, Jogos</p>
+                        <p class="texto-longo">Um dos deuses mais imprevisíveis e caóticos de todos, Voler é o deus da
                             trapaça,
                             mentira
                             e ladronagem em geral. Os outros deuses não confiam em Voler nem um pouco, mas ele não se
@@ -524,16 +525,16 @@
                             desconhecido e no não dito, e que às vezes, o maior poder reside naquilo que é
                             oculto."<br>—Inilu, Ladra Mestre do porto de Ohmar
                         </p>
-                        <img src="./Deuses/Voler.png" class="imagem">
+                        <img src="./Deuses/Voler.png" class="imagem" alt="Ficha de Voler: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Vitesse</h1>
-                        <img src="./ArteDeuses/Vitesse.png" class="bandeira">
-                        <p id="texto">Mensageiro, Viajantes, Caminhos e Passagens</p>
-                        <p id="texto-longo">Vitesse exerse uma função única entre os deuses, pois mesmo sendo uma
+                        <h1 id="vitesse" class="container_txt">Vitesse</h1>
+                        <img src="./ArteDeuses/Vitesse.png" class="bandeira" alt="Arte de Vitesse" loading="lazy" decoding="async">
+                        <p class="dominios">Mensageiro, Viajantes, Caminhos e Passagens</p>
+                        <p class="texto-longo">Vitesse exerce uma função única entre os deuses, pois mesmo sendo uma
                             divindade completa,
                             ele é considerado o mensageiro divino entregando mensagens, decretos, e outras formas de
                             comunicação entre os
@@ -542,38 +543,38 @@
                             para longas viagens e outras atividades.
                             <br>"Vitesse não é apenas um mensageiro entre nós, mas os próprios deuses pedem favores para
                             entregar mensagens e sinais entre si. Ele nos concede velocidade e atenção em nossos
-                            caminhos e viagens, assim como nos ensina à protegermos todos aqueles que passam por perto
+                            caminhos e viagens, assim como nos ensina a protegermos todos aqueles que passam por perto
                             em nosso caminho."<br>—Merídio, Alto Clérigo do templo em Kiv
                         </p>
-                        <img src="./Deuses/Vitesse.png" class="imagem">
+                        <img src="./Deuses/Vitesse.png" class="imagem" alt="Ficha de Vitesse: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Pluv</h1>
-                        <img src="./ArteDeuses/Pluv.png" class="bandeira">
-                        <p id="texto">Chuvas, Trovões</p>
-                        <p id="texto-longo">Uma das divindades mais veneradas em certas regiões de Epeon, Pluv tem total
+                        <h1 id="pluv" class="container_txt">Pluv</h1>
+                        <img src="./ArteDeuses/Pluv.png" class="bandeira" alt="Arte de Pluv" loading="lazy" decoding="async">
+                        <p class="dominios">Chuvas, Trovões</p>
+                        <p class="texto-longo">Uma das divindades mais veneradas em certas regiões de Epeon, Pluv tem total
                             controle
                             das chuvas e eventos climáticos relacionados, como raios e trovões. Certas regiões a adoram
                             como uma
                             benevolente criadora de bons climas e plantações, já outras oferecem sacrifícios temendo sua
                             ira.
-                            <br>"Não existira Epeon como conhecemos sem Pluv, por isso a adoramos com grande respeito
+                            <br>"Não existiria Epeon como conhecemos sem Pluv, por isso a adoramos com grande respeito
                             mas também tememos sua ira, pois com a mesma facilidade que nos abençoa, poderia nos
-                            destruir"<br>—Chaka, Sacedortisa de Nova Mughiria
+                            destruir"<br>—Chaka, Sacerdotisa de Nova Mughiria
                         </p>
-                        <img src="./Deuses/Pluv.png" class="imagem">
+                        <img src="./Deuses/Pluv.png" class="imagem" alt="Ficha de Pluv: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Keni</h1>
-                        <img src="./ArteDeuses/Keni.png" class="bandeira">
-                        <p id="texto">Tempo, Passagens, Transições, Começos e Fins</p>
-                        <p id="texto-longo">Representado como um homem mais velho, é dito que Keni consegue ver todo o
+                        <h1 id="keni" class="container_txt">Keni</h1>
+                        <img src="./ArteDeuses/Keni.png" class="bandeira" alt="Arte de Keni" loading="lazy" decoding="async">
+                        <p class="dominios">Tempo, Passagens, Transições, Começos e Fins</p>
+                        <p class="texto-longo">Representado como um homem mais velho, é dito que Keni consegue ver todo o
                             tempo, tanto o que se passou quanto o que irá acontecer. Estátuas de Keni podem ser
                             encontradas em portões de várias cidades e casas, como um protetor de passagens. Também é
                             associado com mudanças naturais, passagem do tempo e festividades comemorando a chegada de
@@ -582,16 +583,16 @@
                             acontecer irá acontecer, mas ele não o revela completamente para nós, portanto precisamos
                             nos esforçar o quanto conseguimos"<br>—Lerecker, Sacerdote do Templo Oculto
                         </p>
-                        <img src="./Deuses/Keni.png" class="imagem">
+                        <img src="./Deuses/Keni.png" class="imagem" alt="Ficha de Keni: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Palmier</h1>
-                        <img src="./ArteDeuses/Palmier.png" class="bandeira">
-                        <p id="texto">Cova,Descanso, Humanidade</p>
-                        <p id="texto-longo">Descrito como o deus mais solitário, Palmier tem o trabalho de guiar as
+                        <h1 id="palmier" class="container_txt">Palmier</h1>
+                        <img src="./ArteDeuses/Palmier.png" class="bandeira" alt="Arte de Palmier" loading="lazy" decoding="async">
+                        <p class="dominios">Cova,Descanso, Humanidade</p>
+                        <p class="texto-longo">Descrito como o deus mais solitário, Palmier tem o trabalho de guiar as
                             almas dos
                             mortos para seus locais finais, assim como julgar para onde devem ir. Palmer não tem muitos
                             seguidores e devotos, se importando mais com seu trabalho.
@@ -603,36 +604,36 @@
                             julgamento final, mas também da possibilidade de redenção e da importância de viver uma vida
                             justa e honrada."<br>—Almer, Sacerdotisa e Embalsamadora chefe da Casa de Mortos de Cartah
                         </p>
-                        <img src="./Deuses/Palmier.png" class="imagem">
+                        <img src="./Deuses/Palmier.png" class="imagem" alt="Ficha de Palmier: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Savania</h1>
-                        <img src="./ArteDeuses/Savania.png" class="bandeira">
-                        <p id="texto">Arte, Música, Criatividade, Inspiração</p>
-                        <p id="texto-longo">Savania encorpora os aspectos de arte, criatividade, e outras
+                        <h1 id="savania" class="container_txt">Savania</h1>
+                        <img src="./ArteDeuses/Savania.png" class="bandeira" alt="Arte de Savania" loading="lazy" decoding="async">
+                        <p class="dominios">Arte, Música, Criatividade, Inspiração</p>
+                        <p class="texto-longo">Savania incorpora os aspectos de arte, criatividade, e outras
                             Para os seus seguidores, colocar as inspirações e emoções em ações, até as menores, é a mais
                             alta forma de adoração.
                             <br>"Adoramos Savania com nossas canções, danças e festas, e criações que só são possíveis
-                            pela inspiração dada à nós por ela."<br>—Misfi Angra, Alto Bardo do Colégio de Dusan
+                            pela inspiração dada a nós por ela."<br>—Misfi Angra, Alto Bardo do Colégio de Dusan
                         </p>
-                        <img src="./Deuses/Savania.png" class="imagem">
+                        <img src="./Deuses/Savania.png" class="imagem" alt="Ficha de Savania: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Takeru</h1>
-                        <img src="./ArteDeuses/Takeru.png" class="bandeira">
-                        <p id="texto">Mares, Viajantes do Mar, Pescadores</p>
-                        <p id="texto-longo">Dito como um protetor e dominador de águas turbulentas, Takeru é
+                        <h1 id="takeru" class="container_txt">Takeru</h1>
+                        <img src="./ArteDeuses/Takeru.png" class="bandeira" alt="Arte de Takeru" loading="lazy" decoding="async">
+                        <p class="dominios">Mares, Viajantes do Mar, Pescadores</p>
+                        <p class="texto-longo">Dito como um protetor e dominador de águas turbulentas, Takeru é
                             representado como um poderoso guerreiro sempre atento aos seus seguidores, protegendo de
-                            seus perigos, tanto naturais quanto humanos. Takeru também é adorado por vários marcadores
+                            seus perigos, tanto naturais quanto humanos. Takeru também é adorado por vários mercadores
                             que viajam em rotas perigosas
-                            <br>"Eu juro por toda minha linhagem, à dois anos estávamos voltando de Ulgus com caixotes
-                            cheios de folhas de Chorc e outras especiarías. No meio do oceano, longe de qualquer ilha ou
+                            <br>"Eu juro por toda minha linhagem, há dois anos estávamos voltando de Ulgus com caixotes
+                            cheios de folhas de Chorc e outras especiarias. No meio do oceano, longe de qualquer ilha ou
                             porto, o tempo se fechou de repente e junto com a tempestade. uma criatura apareceu, parecia
                             um peixe ou uma baleia, mas era gigantesco e cheio de tentáculos! Ele bateu do lado do barco
                             e quase afundamos de uma vez. Foi quando lembrei das histórias que meu pai me dizia, e pedi
@@ -642,73 +643,75 @@
                             no mar. Foi aí que percebi que o que meu pai me contava, era muito mais do que histórias"
                             <br>—Luedu, capitão da frota mercantil de Azunil, uma ilha de Napaj
                         </p>
-                        <img src="./Deuses/Takeru.png" class="imagem">
+                        <img src="./Deuses/Takeru.png" class="imagem" alt="Ficha de Takeru: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Razz'msen</h1>
-                        <img src="./ArteDeuses/Razzmsen.png" class="bandeira">
-                        <p id="texto">Natureza, Florestas, Animais, Elfos</p>
-                        <p id="texto-longo">Aparecendo como uma mulher com características animais que variam, Razzmsen
+                        <h1 id="razz-msen" class="container_txt">Razz'msen</h1>
+                        <img src="./ArteDeuses/Razzmsen.png" class="bandeira" alt="Arte de Razz'msen" loading="lazy" decoding="async">
+                        <p class="dominios">Natureza, Florestas, Animais, Elfos</p>
+                        <p class="texto-longo">Aparecendo como uma mulher com características animais que variam, Razzmsen
                             é a
                             deusa da natureza e locais selvagens. Seus seguidores costumam ser muito reclusos e
                             separados de
                             qualquer civilização, salvo quando é julgado necessário.
-                            <br>"Muitas pessoas da cidade tem a ideia errada de natureza. Ficaram tanto tempo
-                            longe de uma floresta de verdades que esqueceram o que realmente é. Acham que viriam em um
-                            bosque cheio de borboletas e animaizinhos e viviriam em paz e harmonia. Hm.. Natureza de
+                            <br>"Muitas pessoas da cidade têm a ideia errada de natureza. Ficaram tanto tempo
+                            longe de uma floresta de verdade que esqueceram o que realmente é. Acham que viriam em um
+                            bosque cheio de borboletas e animaizinhos e viveriam em paz e harmonia. Hm.. Natureza de
                             verdade arrancaria seu rosto e usaria como máscara. A natureza governa suas criações
                             igualmente. Razz'msen nos desafia a encarar a verdadeira face da natureza, não como um
                             inimigo, mas como um mestre implacável que nos ensina a ser resilientes, adaptáveis e
                             respeitosos com o mundo ao nosso redor."<br>—Artag, Sacerdotisa do Templo Elevado
                         </p>
-                        <img src="./Deuses/Razzmsen.png" class="imagem">
+                        <img src="./Deuses/Razzmsen.png" class="imagem" alt="Ficha de Razz'msen: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Easis</h1>
-                        <img src="./ArteDeuses/Easis.png" class="bandeira">
-                        <p id="texto">Vida, Civilização</p>
-                        <p id="texto-longo">Easis é a deusa
+                        <h1 id="easis" class="container_txt">Easis</h1>
+                        <img src="./ArteDeuses/Easis.png" class="bandeira" alt="Arte de Easis" loading="lazy" decoding="async">
+                        <p class="dominios">Vida, Civilização</p>
+                        <p class="texto-longo">Easis é a deusa
                             da
-                            vida e prosperidade. Assim como curar feridos também costuma abençoar seguidores com boas
+                            vida e prosperidade. Assim como curar feridos também costuma abençoar seguidores com boa
                             saúde, proteção de suas casas e partos saudáveis.
-                            <br>"Para todos que ceitarem seu eterno abraço, Easis, a Senhora da Manhã, oferece
+                            <br>"Para todos que aceitarem seu eterno abraço, Easis, a Senhora da Manhã, oferece
                             suas bênçãos e milagres. Para aqueles que negam a beleza da vida, a resposta de Easis é
                             direta e definitiva. Easis nos recorda da beleza que se encontra em cada novo amanhecer, no
                             renascimento e na promessa de um novo dia. Ela nos ensina a abraçar a vida com gratidão, a
                             encontrar alegria nas coisas simples e a renovar nossa fé na luz mesmo nos momentos mais
                             escuros."<br>—Elitris, alta sacerdotisa da Torre Rubra
                         </p>
-                        <img src="./Deuses/Easis.png" class="imagem">
+                        <img src="./Deuses/Easis.png" class="imagem" alt="Ficha de Easis: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
 
                 <li>
                     <div class="container_img">
-                        <h1 class="container_txt">Drie</h1>
-                        <img src="./ArteDeuses/Drie.png" class="bandeira">
-                        <p id="texto">Amor, Relacionamento, Empatia, Cuidado</p>
-                        <p id="texto-longo">Geralmente aparecendo como uma moça de beleza imensurável, Drie é a deusa do
-                            amor e bons relacionamntos. É dito que a flecha que ela segura atinge os corações daqueles
+                        <h1 id="drie" class="container_txt">Drie</h1>
+                        <img src="./ArteDeuses/Drie.png" class="bandeira" alt="Arte de Drie" loading="lazy" decoding="async">
+                        <p class="dominios">Amor, Relacionamento, Empatia, Cuidado</p>
+                        <p class="texto-longo">Geralmente aparecendo como uma moça de beleza imensurável, Drie é a deusa do
+                            amor e bons relacionamentos. É dito que a flecha que ela segura atinge os corações daqueles
                             destinados a se encontrarem. A maioria dos clérigos e sacerdotes de Drie realizam
                             casamentos, uniões e também são conhecidos por sábios conselhos.
-                            <br>"Amor é a mais potente força neste mundo. Nenhuma das grandes maravlihas ou conquistas
+                            <br>"Amor é a mais potente força neste mundo. Nenhuma das grandes maravilhas ou conquistas
                             que já foram feitas pela história seriam feitas se não houvesse amor por trás
                             delas"<br>—Sulzy, Conselheira no templo do Lago de Lesrem
                         </p>
-                        <img src="./Deuses/Drie.png" class="imagem">
+                        <img src="./Deuses/Drie.png" class="imagem" alt="Ficha de Drie: símbolo e constelação" loading="lazy" decoding="async">
                     </div>
                 </li>
             </ul>
 
+        <ul class="lista">
+
             <li>
                 <div class="container_txt">
-                    <div id="texto-longo">
+                    <div class="texto-longo">
                         <br>
                         <hr>
                         <p>"Os planos incluem o Plano Material, o principal palco da criação da Mente Primordial, mas
@@ -716,42 +719,39 @@
                             Material baseados em emoções, positivas e negativas, assim como memórias e sonhos. Várias
                             criaturas têm suas origens nestes locais, algumas se adaptando com o tempo ao Plano Material
                             e se tornando habitantes comuns.
-                            Outros planos notáveis sãos os quatro planos elementais de Ar, Água, Terra e Fogo,
+                            Outros planos notáveis são os quatro planos elementais de Ar, Água, Terra e Fogo,
                             possivelmente criados como "âncoras" das quais o Plano Material se baseia. Entre todos esses
                             planos há uma
                             região conhecida como Plano Astral, onde pensamentos e sonhos se movem livremente. Os 30
                             fragmentos que governam sobre Epeon, depois adorados como deuses, habitam bolhas divinas
-                            que flutuavam no Plano Astral, assim como seus servos e outras semi-realidades divinas.
+                            que flutuavam no Plano Astral, assim como seus servos e outras semirrealidades divinas.
                             Essas bolhas divinas se espalham no nosso céu noturno como belos
                             pontos cintilantes."<br>—Voron, gnomo andarilho</p>
                     </div>
                 </div>
                 <div class="container_img">
-                    <a href="./Imagens/ACosmoskk.png">
-                        <img src="./Imagens/ACosmoskk.png" class="imagem">
+                    <a href="./Imagens/ACosmoskk.png" target="_blank" rel="noopener">
+                        <img src="./Imagens/ACosmoskk.png" class="imagem" alt="Representação do cosmos e dos planos de existência de Epeon" loading="lazy" decoding="async">
                     </a>
                 </div>
             </li>
 
         </ul>
-    </center>
+    </main>
 
-    <footer>
+    <footer class="rodape">
         <div class="caixa_baixa">
-            <p id="texto">Dados para rodar</p><br>
-            <nav>
-                <ul>
-                    <li><button class="rolada" onclick="rolada(4)" id="rolada4">D4 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(6)" id="rolada6">D6 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(8)" id="rolada8">D8 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(10)" id="rolada10">D10 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(12)" id="rolada12">D12 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(20)" id="rolada20">D20 :</button> </li>
-                </ul>
-            </nav>
-            <a href="https://github.com/NahNathan" id="final">Feito por Nathan RDS ☕🗿</a>
+            <h2 class="rodape-titulo">Dados para rodar</h2>
+            <ul class="dados">
+                <li><button type="button" class="rolada" data-dado="4"><span class="dado-nome">D4</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="6"><span class="dado-nome">D6</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="8"><span class="dado-nome">D8</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="10"><span class="dado-nome">D10</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="12"><span class="dado-nome">D12</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="20"><span class="dado-nome">D20</span><span class="dado-valor">–</span></button></li>
+            </ul>
+            <a href="https://github.com/NahNathan" class="assinatura" target="_blank" rel="noopener">Feito por Nathan RDS ☕🗿</a>
         </div>
-        <br> <br> <br> <br> <br> <br>
     </footer>
 
 </body>

@@ -1,75 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="script" href="script.js">
-    <link rel="icon" href="icon.ico">
+    <meta name="description" content="Repositório de ideias, lore e conceitos do mundo de Epeon, um cenário de D&D.">
+    <meta name="theme-color" content="#d2691e">
     <title>Epeon</title>
-    <script src="script.js"></script>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="topo">
         <div class="caixa">
-            <img class="dexter" src="./Imagens/Logo.png"></img>
-            <nav>
+            <a href="index.html" class="logo-link" aria-label="Epeon — página inicial">
+                <img class="logo" src="./Imagens/Logo.png" alt="Epeon">
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
                     <li><a href="locais.html">Locais</a></li>
                     <li><a href="divindades.html">Divindades</a></li>
                     <li><a href="mapas.html">Mapas</a></li>
                     <li><a href="personagens.html">Personagens</a></li>
                     <li><a href="extras.html">Extras</a></li>
-                    <li><a href="conceitos.html">Conceitos</a></li>                 
+                    <li><a href="conceitos.html">Conceitos</a></li>
                 </ul>
             </nav>
-            <div id="texto">
-                <hr>
-            </div>
+            <hr class="divisoria-topo">
         </div>
     </header>
 
-        <center>
+        <main class="conteudo">
         <div class="container_txt">
-            <div id="texto">
-                <p style="font-family:FonteMedieval, Courier;"><br>Hey, bem vindo ☕</p>
+            <div class="texto">
+                <p class="destaque">Hey, bem-vindo ☕</p>
             </div>
         </div>
 
         <ul class="lista">
             <li>
                 <div class="container_img">
-                    <img src="./Imagens/dm.jpg" class="dexter">   
+                    <img src="./Imagens/dm.jpg" class="dexter" alt="Ilustração de um mestre de jogo preparando o cenário" fetchpriority="high">   
                     <br>
-                    <p id="texto">Esse site é basicamente um repositório de ideias e conceitos para o meu mundo de D&D</p><br>
-                    <p id="texto">É mais direcionado para os meus jogadores e para mim também, mas sinta-se livre para dar uma olhada</p>
+                    <p class="texto">Esse site é basicamente um repositório de ideias e conceitos para o meu mundo de D&amp;D</p>
+                    <p class="texto">É mais direcionado para os meus jogadores e para mim também, mas sinta-se livre para dar uma olhada</p>
                 </div>
             </li>
             
         </ul>
-    </center>    
+    </main>    
 
-    <footer>
-        
+    <footer class="rodape">
         <div class="caixa_baixa">
-            <p id="texto">Dados para rodar</p><br>
-            <nav>
-                <ul>
-                    <li><button class="rolada" onclick="rolada(4)"  id="rolada4" >D4 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(6)"  id="rolada6" >D6 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(8)"  id="rolada8" >D8 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(10)"  id="rolada10" >D10 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(12)"  id="rolada12" >D12 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(20)"  id="rolada20" >D20 :</button> </li>
-                </ul>
-            </nav>
-            <a href="https://github.com/NahNathan" id="final">Feito por Nathan RDS ☕🗿</a>
+            <h2 class="rodape-titulo">Dados para rodar</h2>
+            <ul class="dados">
+                <li><button type="button" class="rolada" data-dado="4"><span class="dado-nome">D4</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="6"><span class="dado-nome">D6</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="8"><span class="dado-nome">D8</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="10"><span class="dado-nome">D10</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="12"><span class="dado-nome">D12</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="20"><span class="dado-nome">D20</span><span class="dado-valor">–</span></button></li>
+            </ul>
+            <a href="https://github.com/NahNathan" class="assinatura" target="_blank" rel="noopener">Feito por Nathan RDS ☕🗿</a>
         </div>
-        <br> <br> <br> <br> <br> <br>
     </footer>
     
 </body>

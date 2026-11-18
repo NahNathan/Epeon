@@ -1,175 +1,459 @@
+/* =========================================================
+   EPEON — folha de estilo principal
+   (carregada depois do reset.css)
+   ========================================================= */
+
 @font-face {
     font-family: FonteTulipa;
     src: url(Ancient-Tulip.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: FonteMedieval;
     src: url(MedievalSharp-Book.ttf);
+    font-display: swap;
+}
+
+:root {
+    --fundo: chocolate;
+    --texto: aliceblue;
+    --dourado: bisque;
+    --dourado-suave: rgba(255, 228, 196, 0.35);
+    --roxo: #5A0A80;
+    --roxo-vivo: blueviolet;
+    --roxo-escuro: #33064a;
+    --vermelho: brown;
+    --brilho: lightblue;
+    --foco: aquamarine;
+
+    --cartao-fundo: rgba(70, 25, 0, 0.18);
+    --cartao-borda: rgba(255, 228, 196, 0.22);
+    --sombra: 0 10px 30px rgba(0, 0, 0, 0.18);
+
+    --fonte-titulo: FonteMedieval, Georgia, serif;
+    --fonte-menu: FonteTulipa, FonteMedieval, Georgia, serif;
+    --fonte-texto: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ================= BASE ================= */
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background: chocolate;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: var(--fonte-texto);
+    -webkit-font-smoothing: antialiased;
 }
 
-header {
-    background: linear-gradient(gray, chocolate);
+::selection {
+    background: var(--roxo-vivo);
+    color: white;
+}
+
+a {
+    color: var(--dourado);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--foco);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+strong,
+b {
+    font-weight: bold;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    margin: 2.5vh auto;
+    border: 0;
+    background: linear-gradient(to right, transparent, var(--dourado-suave), transparent);
+}
+
+/* ================= CABEÇALHO ================= */
+
+.topo {
+    background: linear-gradient(gray, var(--fundo));
 }
 
 .caixa {
-    font-size: 8vw;
-    text-align: center;
-    padding-top: 30px;
-}
-
-nav li {
-    display: inline;
+    padding: 30px 16px 0;
     text-align: center;
 }
 
-nav a {
+.logo-link {
+    display: inline-block;
+}
+
+.logo {
+    width: min(40vw, 560px);
+    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.3));
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4em 1.6em;
+    margin-top: 3vh;
+}
+
+.menu a {
+    position: relative;
+    display: inline-block;
+    padding: 0.2em 0;
+    color: var(--texto);
+    font-family: var(--fonte-menu);
+    font-size: clamp(1rem, 1.8vw, 1.7rem);
     text-transform: uppercase;
-    color: aliceblue;
-    font-size: 2vw;
     text-decoration: none;
-    font-family: FonteTulipa, Courier;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    transition: color 0.25s;
 }
 
-nav a:hover {
-    color: bisque;
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.1em;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transition: transform 0.25s;
 }
 
-nav a:active {
-    color: aquamarine;
+.menu a:hover,
+.menu a[aria-current="page"] {
+    color: var(--dourado);
+}
+
+.menu a:hover::after,
+.menu a[aria-current="page"]::after {
+    transform: scaleX(1);
+}
+
+.menu a:active {
+    color: var(--foco);
+}
+
+.divisoria-topo {
+    width: 80%;
+    height: 2px;
+    margin: 3vh auto 4vh;
+    background: linear-gradient(to right, transparent, var(--roxo) 15%, var(--roxo) 85%, transparent);
+}
+
+/* ================= CONTEÚDO ================= */
+
+.conteudo {
+    flex: 1;
+    width: 100%;
+    padding: 0 16px 4vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Cada item das listas vira um "cartão" */
+.lista {
+    margin: 0;
+    padding: 0;
+}
+
+.lista > li,
+.cartao {
+    display: block;
+    max-width: 960px;
+    margin: 0 auto 5vh;
+    padding: clamp(18px, 3vw, 36px);
+    box-sizing: border-box;
+    background: var(--cartao-fundo);
+    border: 1px solid var(--cartao-borda);
+    border-radius: 18px;
+    box-shadow: var(--sombra);
+}
+
+.texto.cartao {
+    max-width: 960px;
+}
+
+.cartao > p,
+.cartao > h3 {
+    max-width: 75ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container_img {
     position: relative;
-    padding-top: 3vw;
 }
 
-.imagem {
-    border-radius: 15px;
-    width: 60vw;
-    box-shadow: 5px 5px 5px lightblue;
-    margin-bottom: 5vh;
+/* Títulos de seção (nomes de reinos, deuses, etc.) */
+.container_txt {
+    margin-bottom: 2vh;
+    color: white;
+    font-family: var(--fonte-titulo);
 }
 
-#texto {
-    font-style: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
+h1.container_txt {
+    font-size: clamp(1.9rem, 4vw, 2.8rem);
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    text-shadow: 2px 2px 0 rgba(90, 10, 128, 0.55), 0 0 18px rgba(0, 0, 0, 0.2);
+    scroll-margin-top: 24px;
+}
+
+h1.container_txt::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 2px;
+    margin: 0.35em auto 0;
+    background: linear-gradient(to right, transparent, var(--dourado), transparent);
+}
+
+.conteudo > h1.container_txt {
+    margin: 2vh 0 4vh;
+}
+
+.conteudo h3 {
+    margin: 3vh 0 1.5vh;
+    color: var(--dourado);
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+}
+
+/* Textos */
+.texto,
+.texto-longo {
+    max-width: 75ch;
+    margin: 2vh auto;
+    color: var(--texto);
+    font-family: var(--fonte-texto);
     font-size: 1.1rem;
-    margin: 3vh 10vw;
+    line-height: 1.65;
 }
 
-#texto-longo{
-    font-style: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
-    font-size: 1.25rem;
-    margin: 3vh 10vw 3vh;
+.texto-longo {
+    font-size: 1.2rem;
+    line-height: 1.7;
     text-align: left;
 }
 
-.lista li {
-    display: list-item;
-    margin: 0.5em 0.5em;
-    box-sizing: border-box;
+.texto .texto {
+    margin: 0 auto;
 }
 
+.texto strong,
+.texto b,
+.texto-longo strong {
+    color: var(--dourado);
+}
+
+.destaque {
+    color: var(--texto);
+    font-family: var(--fonte-titulo);
+    font-size: 1.35rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.container_img > .destaque {
+    margin-bottom: 2vh;
+}
+
+.esquerda {
+    text-align: left;
+}
+
+.esquerda + .esquerda {
+    margin-top: 1em;
+}
+
+.subtitulo {
+    color: var(--dourado);
+    font-family: var(--fonte-titulo);
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.rotulo {
+    color: var(--dourado);
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    letter-spacing: 0.02em;
+}
+
+.dominios {
+    max-width: 60ch;
+    margin: 2vh auto;
+    color: var(--dourado);
+    font-family: var(--fonte-titulo);
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+}
+
+/* Imagens */
+.dexter,
+.imagem,
 .bandeira {
-    margin: 1vh;
-    border-radius: 15px;
-    height: 30vw;
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+    vertical-align: middle;
 }
 
 .dexter {
-    margin: 1vh;
-    border-radius: 15px;
     width: 40vw;
+    margin: 1vh;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* ================= FOOTER ================= */
-/* Seletores com "body >" para vencer o reset.css, que é carregado depois */
+.imagem {
+    width: 60vw;
+    margin: 2vh 0 1vh;
+    box-shadow: 0 0 0 1px rgba(173, 216, 230, 0.4), 6px 6px 14px rgba(173, 216, 230, 0.45);
+}
 
-body > footer {
+.bandeira {
+    width: auto;
+    height: clamp(220px, 26vw, 380px);
+    margin: 1vh;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagens clicáveis (abrem em tamanho real) */
+a > .dexter {
+    width: 60vw;
+}
+
+a > .dexter,
+a > .imagem {
+    cursor: zoom-in;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+a:hover > .dexter,
+a:hover > .imagem {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 2px var(--dourado-suave), 0 0 22px var(--brilho);
+}
+
+/* ================= BOTÃO VOLTAR AO TOPO ================= */
+
+.voltar-topo {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    color: var(--texto);
+    background: linear-gradient(to bottom, var(--roxo-vivo), var(--roxo));
+    border: 2px solid var(--dourado-suave);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s, visibility 0.3s, box-shadow 0.3s;
+}
+
+.voltar-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+.voltar-topo:hover {
+    box-shadow: 0 0 14px var(--brilho);
+}
+
+/* ================= RODAPÉ ================= */
+
+.rodape {
     position: relative;
-    margin-top: 6vh;
+    margin-top: 4vh;
     padding: 7vh 4vw 5vh;
-    background: linear-gradient(to bottom, chocolate 0%, #8a3a5c 45%, #5A0A80 80%, #33064a 100%);
+    background: linear-gradient(to bottom, var(--fundo) 0%, #8a3a5c 45%, var(--roxo) 80%, var(--roxo-escuro) 100%);
 }
 
-/* Linha ornamental no topo do footer */
-body > footer::before {
+/* Linha ornamental no topo do rodapé */
+.rodape::before {
     content: "✦";
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 1;
     padding: 0 0.6em;
-    color: bisque;
+    color: var(--dourado);
     font-size: 1.4rem;
     line-height: 1;
     text-shadow: 0 0 8px rgba(255, 228, 196, 0.6);
-    background: chocolate;
-    z-index: 1;
+    background: var(--fundo);
+    transform: translate(-50%, -50%);
 }
 
-body > footer::after {
+.rodape::after {
     content: "";
     position: absolute;
     top: 0;
     left: 10%;
     right: 10%;
     height: 1px;
-    background: linear-gradient(to right, transparent, bisque, transparent);
-}
-
-/* Os <br> do HTML são substituídos por espaçamento via CSS */
-body > footer > br,
-.caixa_baixa > br {
-    display: none;
+    background: linear-gradient(to right, transparent, var(--dourado), transparent);
 }
 
 .caixa_baixa {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
-    color: aliceblue;
 }
 
-.caixa_baixa #texto {
-    margin: 0 0 3vh;
-    font-family: FonteMedieval, Courier;
+.rodape-titulo {
+    margin-bottom: 3vh;
+    color: var(--dourado);
+    font-family: var(--fonte-titulo);
     font-size: clamp(1.4rem, 3vw, 2rem);
     letter-spacing: 0.08em;
-    color: bisque;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
 }
 
-.caixa_baixa nav ul {
+.dados {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 14px;
-}
-
-.caixa_baixa nav li {
-    display: block;
+    gap: 12px;
 }
 
 /* Botões de dado */
 .rolada {
-    min-width: 5.2em;
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.35em;
+    min-width: 4.6em;
     padding: 0.45em 0.8em;
-    color: aliceblue;
-    background: linear-gradient(to bottom, #b33a3a, brown 55%, #7a1f1f);
+    color: var(--texto);
+    background: linear-gradient(to bottom, #b33a3a, var(--vermelho) 55%, #7a1f1f);
     border: 2px solid rgba(255, 228, 196, 0.55);
     border-radius: 12px;
-    font-family: FonteMedieval, Courier;
+    font-family: var(--fonte-titulo);
     font-size: clamp(1.1rem, 2.4vw, 1.6rem);
-    font-variant-numeric: tabular-nums;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.25),
@@ -178,93 +462,143 @@ body > footer > br,
     transition: transform 0.2s, box-shadow 0.3s, background 0.3s, border-color 0.3s;
 }
 
+.dado-nome::after {
+    content: ":";
+}
+
+.dado-valor {
+    min-width: 1.4em;
+    font-variant-numeric: tabular-nums;
+    text-align: left;
+}
+
 .rolada:hover {
-    background: linear-gradient(to bottom, #a65ff0, blueviolet 55%, #5A0A80);
-    border-color: bisque;
+    background: linear-gradient(to bottom, #a65ff0, var(--roxo-vivo) 55%, var(--roxo));
+    border-color: var(--dourado);
     transform: translateY(-3px);
     box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.3),
-        0 0 14px lightblue;
+        0 0 14px var(--brilho);
 }
 
 .rolada:active {
     transform: translateY(1px);
     box-shadow:
         inset 0 2px 4px rgba(0, 0, 0, 0.4),
-        0 0 8px lightblue;
+        0 0 8px var(--brilho);
 }
 
-.rolada:focus-visible {
-    outline: 2px solid aquamarine;
-    outline-offset: 3px;
+.rolada.rolando .dado-valor {
+    opacity: 0.6;
+}
+
+/* 20 natural */
+.rolada.critico {
+    background: linear-gradient(to bottom, #f5c542, goldenrod 55%, #8a6410);
+    border-color: #fff3c4;
+    box-shadow: 0 0 18px gold;
+    animation: pulso 0.6s ease-out;
+}
+
+/* 1 natural */
+.rolada.falha {
+    background: linear-gradient(to bottom, #4a1414, #2a0a0a);
+    border-color: rgba(255, 228, 196, 0.25);
+    color: #c9b8b8;
+    animation: tremor 0.4s;
+}
+
+@keyframes pulso {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.12); }
+    100% { transform: scale(1); }
+}
+
+@keyframes tremor {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
 }
 
 /* Assinatura */
-#final {
+.assinatura {
     display: inline-block;
     margin-top: 5vh;
     padding-top: 2.5vh;
     border-top: 1px solid rgba(255, 228, 196, 0.35);
-    color: aliceblue;
-    font-family: FonteMedieval, Courier;
+    color: var(--texto);
+    font-family: var(--fonte-titulo);
     font-size: 1.15rem;
     text-decoration: none;
     opacity: 0.85;
     transition: color 0.3s, opacity 0.3s, text-shadow 0.3s;
 }
 
-#final:hover {
-    color: bisque;
+.assinatura:hover {
+    color: var(--dourado);
     opacity: 1;
     text-shadow: 0 0 8px rgba(255, 228, 196, 0.5);
 }
 
-#final:active {
-    color: aquamarine;
+.assinatura:active {
+    color: var(--foco);
 }
 
-.container_txt {
-    font-family: FonteMedieval;
-    font-size: 40px;
-    color: white;
-    margin-bottom: 2vh;
+/* Texto só para leitores de tela */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
 }
 
-hr{
-    color: #5A0A80;
-}
+/* ================= CELULAR ================= */
 
 @media only screen and (max-width: 700px) {
-    #texto {
-        font-size: 0.8rem;
-        margin: 3vh 8vw;
-    }
-
-    #texto-longo{
-        font-size: 1rem;
-        margin: 3vh 8vw;
-    }
-
-    .bandeira{
-        width: 70vw;
-        height: auto;
-    }
-
-    .imagem{
-        width: 80vw;
-        height: auto;
-    }
-
-    .dexter{
+    .logo {
         width: 75vw;
+    }
+
+    .menu ul {
+        gap: 0.3em 1em;
+    }
+
+    .menu a {
+        font-size: 1rem;
+    }
+
+    .texto {
+        font-size: 1rem;
+    }
+
+    .texto-longo {
+        font-size: 1.05rem;
+    }
+
+    .lista > li,
+    .cartao {
+        border-radius: 14px;
+    }
+
+    .dexter,
+    a > .dexter,
+    .imagem {
+        width: 100%;
+        margin: 1vh 0;
+    }
+
+    .bandeira {
+        width: min(70vw, 300px);
         height: auto;
     }
 
-    body > footer {
+    .rodape {
         padding: 6vh 6vw 4vh;
     }
 
-    .caixa_baixa nav ul {
+    .dados {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
@@ -276,7 +610,27 @@ hr{
         font-size: 1.1rem;
     }
 
-    #final {
+    .assinatura {
         font-size: 1rem;
+    }
+
+    .voltar-topo {
+        right: 14px;
+        bottom: 14px;
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
     }
 }

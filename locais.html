@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="script" href="script.js">
+    <meta name="description" content="Reinos, regiões e capitais do mundo de Epeon.">
+    <meta name="theme-color" content="#d2691e">
+    <title>Locais · Epeon</title>
     <link rel="icon" href="icon.ico">
-    <title>Epeon</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header class="topo">
         <div class="caixa">
-            <img class="dexter" src="./Imagens/Logo.png"></img>
-            <nav>
+            <a href="index.html" class="logo-link" aria-label="Epeon — página inicial">
+                <img class="logo" src="./Imagens/Logo.png" alt="Epeon">
+            </a>
+            <nav class="menu" aria-label="Navegação principal">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="locais.html">Locais</a></li>
+                    <li><a href="locais.html" aria-current="page">Locais</a></li>
                     <li><a href="divindades.html">Divindades</a></li>
                     <li><a href="mapas.html">Mapas</a></li>
                     <li><a href="personagens.html">Personagens</a></li>
@@ -28,19 +30,17 @@
                     <li><a href="conceitos.html">Conceitos</a></li>
                 </ul>
             </nav>
-            <div id="texto">
-                <hr>
-            </div>
+            <hr class="divisoria-topo">
         </div>
     </header>
 
-    <center>
+    <main class="conteudo">
         <ul class="lista">
             <li>
-                <div class="container_img" id="texto">
-                    <p style="font-family:FonteMedieval, Courier;">O mundo de Epeon🧙‍♂️</p>
-                    <a href="./Imagens/Mapas/Mapa Full.png">
-                        <img src="./Imagens/Mapas/Mapa Full.png" class="dexter">
+                <div class="container_img texto">
+                    <p class="destaque">O mundo de Epeon🧙‍♂️</p>
+                    <a href="./Imagens/Mapas/Mapa Full.png" target="_blank" rel="noopener">
+                        <img src="./Imagens/Mapas/Mapa Full.png" class="dexter" alt="Mapa: O mundo de Epeon" fetchpriority="high">
                     </a>
                 </div>
             </li>
@@ -48,16 +48,16 @@
 
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Ashirai</h1>
-                    <img src="Bandeiras/Ashirai.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Akaimor<br>Ashirai é uma região conhecida por intriga e mistério. Com
+                    <h1 id="ashirai" class="container_txt">Ashirai</h1>
+                    <img src="Bandeiras/Ashirai.png" class="bandeira" alt="Bandeira de Ashirai" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Akaimor<br>Ashirai é uma região conhecida por intriga e mistério. Com
                         um
                         clima
-                        árido na maioria da região, mas mais ameno na costa, a região contêm importantes rotas de
+                        árido na maioria da região, mas mais ameno na costa, a região contém importantes rotas de
                         comércio
                         há muito tempo, gerando uma grande quantidade de diferentes povos integrando a região. Também
-                        contêm várias minas de sal,
-                        ouro e gemas.<br><br>>História: Originalmente um ponto de encontro para tribos nômades,
+                        contém várias minas de sal,
+                        ouro e gemas.<br><br><strong class="rotulo">História:</strong> Originalmente um ponto de encontro para tribos nômades,
                         a região floresceu como um centro comercial, graças à sua localização privilegiada. Aos poucos,
                         essas tribos assentaram e formaram a Liga dos Mercadores de Ashirai, que mais tarde evoluiu para
                         um reino unificado sob uma coroa mercante. O reino enfrentou e sobreviveu a inúmeras tentativas
@@ -65,47 +65,45 @@
                         astutas. Com o
                         passar dos
                         séculos, Ashirai tornou-se sinônimo de riqueza e mistério, mantendo a sua independência através
-                        de um equilíbrio delicado de poder e diplomacia.<br><br>>Pontos de Interesse: O Farol de
+                        de um equilíbrio delicado de poder e diplomacia.<br><br><strong class="rotulo">Pontos de Interesse:</strong> O Farol de
                         Agartha, Mercado das Máscaras, As Fontes de Esmeralda, Dunas dos Ecos, Academia do Lago
-                    </p><br>
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Astariaridia</h1>
-                    <img src="Bandeiras/Astariaridia.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Hun Sei<br>Composta por uma vasta extensão de planícies e estepes,
+                    <h1 id="astariaridia" class="container_txt">Astariaridia</h1>
+                    <img src="Bandeiras/Astariaridia.png" class="bandeira" alt="Bandeira de Astariaridia" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Hun Sei<br>Composta por uma vasta extensão de planícies e estepes,
                         assim
                         como várias ilhas, essa região é habitada por várias tribos unificadas. A principal atividade é
-                        a caça de grandes animais, assim como mineração nas montanhas ao oeste.<br><br>>História:
-                        Astariaridia sempre foi habitada por humanos
-                        nômades, que pertenciam à tribos várias diferentes, mas compartilhavam lendas e uma certa
-                        cultura em comum. Batalhas e guerras entre tribos era comum, até um lendário arqueiro vindo de
+                        a caça de grandes animais, assim como mineração nas montanhas ao oeste.<br><br><strong class="rotulo">História:</strong> Astariaridia sempre foi habitada por humanos
+                        nômades, que pertenciam a tribos várias diferentes, mas compartilhavam lendas e uma certa
+                        cultura em comum. Batalhas e guerras entre tribos eram comuns, até um lendário arqueiro vindo de
                         um clã simples, Hansei-Ro, o Arco de Ferro,
                         unificou várias tribos sob uma única bandeira e se tornou o primeiro líder das tribos. Também
                         nessa época elfos
-                        vieram à região, e as tribos obtiveram o conhecimento para criar barcos mais eficásseis, e com
-                        isso dominaram várias ilhas ao sul, criando colônias e rotas de comércio. <br><br>>Pontos de
-                        Interesse: Porto de Kunlu, Monumento às Estepes, Templo do Dragão</p><br>
+                        vieram à região, e as tribos obtiveram o conhecimento para criar barcos mais eficazes, e com
+                        isso dominaram várias ilhas ao sul, criando colônias e rotas de comércio. <br><br><strong class="rotulo">Pontos de Interesse:</strong> Porto de Kunlu, Monumento às Estepes, Templo do Dragão</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Aulora</h1>
-                    <img src="Bandeiras/Aulora.jpeg" class="bandeira">
-                    <p id="texto-longo">>Capital: Finfed<br>Aulora é um frígido reino do norte, composto em sua maioria
+                    <h1 id="aulora" class="container_txt">Aulora</h1>
+                    <img src="Bandeiras/Aulora.jpeg" class="bandeira" alt="Bandeira de Aulora" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Finfed<br>Aulora é um frígido reino do norte, composto em sua maioria
                         por
                         diversas ilhas, mas com uma parte significativa no continente. O clima impetuoso e os invernos
-                        rigorosos moldaram uma população resiliente, cuja cultura valoriza a auto-suficiência, a honra e
+                        rigorosos moldaram uma população resiliente, cuja cultura valoriza a autossuficiência, a honra e
                         a devoção aos antepassados. Seus habitantes, conhecidos como exímios navegadores e guerreiros,
                         seguem antigas tradições de clãs e conselhos tribais. As várias ilhas são um ponto importante de
                         comércio para mercadores ousados, mas também um refúgio para piratas que desafiam os mares
                         gelados. Inspirados por mitos ancestrais, os aulorianos erguem grandes monólitos em homenagem
                         aos seus heróis e antigos gigantes, que segundo lendas ensinaram metalurgia, pesca e criação de
-                        geléias, e várias outras habilidades para a sobrevivência dos ancestrais.<br><br>>História: O
+                        geleias, e várias outras habilidades para a sobrevivência dos ancestrais.<br><br><strong class="rotulo">História:</strong> O
                         conceito de uma Aulora
                         unificada é
-                        relativamente recente. A região antes era controlada pelos seus 3 reinos vizinho: Valryn, de
+                        relativamente recente. A região antes era controlada pelos seus 3 reinos vizinhos: Valryn, de
                         onde veio a atual
                         população élfica; Ingrarim, de onde vieram vários anões; e Etairosh, que por si também era parte
                         do Reino de Uralan.<br> Povos da região sempre se sentiram separados culturalmente e
@@ -116,73 +114,72 @@
                         Rigotin. Após algumas semanas de
                         guerra intensa, Uralan e Ingrarim reconheceram a soberania de Aulora, mas Valryn estendeu seus
                         esforços por diversos anos, até
-                        eventualmente esgotar-se de recursos.<br><br>>Pontos de Interesse: Praça do Queijo & Compota, Túneis de Mun Dural, Torre
+                        eventualmente esgotar-se de recursos.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Praça do Queijo & Compota, Túneis de Mun Dural, Torre
                         Branca de Fátimos, Monumento ao Anão
                     </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Brilon</h1>
-                    <img src="Bandeiras/Brilon.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Umoran<br>Um pequeno império na costa do continente, se destaca pela
+                    <h1 id="brilon" class="container_txt">Brilon</h1>
+                    <img src="Bandeiras/Brilon.png" class="bandeira" alt="Bandeira de Brilon" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Umoran<br>Um pequeno império na costa do continente, se destaca pela
                         bravura
                         e habilidade de guerra de seu povo. Este império é governado pela Igreja do Alto Vento, dedicada
                         à Itris, deusa do crepúsculo e viajantes. Quase todos os nobres são sacerdotes e clérigos
                         devotos às causas da deusa, que eram reprimidos sob o domínio de Valryn e suas práticas mais
                         diretas de adoração à Shad.<br><br>
-                        >História: Recentemente independente do império de Valryn, atualment há vários movimentos locais
+                        <strong class="rotulo">História:</strong> Recentemente independente do império de Valryn, atualmente há vários movimentos locais
                         e lordes de guerra lutando e batalhando pela liderança da região.
-                        <br><br>>Pontos de Interesse: Lago Congelado de Lienm, Ponte de Lacar, Monumento das Espadas
-                    </p><br>
+                        <br><br><strong class="rotulo">Pontos de Interesse:</strong> Lago Congelado de Lienm, Ponte de Lacar, Monumento das Espadas
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Coneia</h1>
-                    <img src="Bandeiras/Coneia.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Enéia<br>Um local brutal e pouco habitado, Coneia é mais uma aliança
+                    <h1 id="coneia" class="container_txt">Coneia</h1>
+                    <img src="Bandeiras/Coneia.png" class="bandeira" alt="Bandeira de Coneia" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Enéia<br>Um local brutal e pouco habitado, Coneia é mais uma aliança
                         de
                         tribos, bárbaros
-                        e cidades estados, conectados por uma cultura semi compartilhada. O clima é frio e seco e lendas
+                        e cidades-estados, conectados por uma cultura semicompartilhada. O clima é frio e seco e lendas
                         locais
                         dizem de uma maldição antiga, causada pelo primeiro líder da região que agiu como um tirano,
                         transformou
-                        a terra em um local inóspito e cheio de monstros.<br><br>>História: A região era antes
-                        pertentente ao
+                        a terra em um local inóspito e cheio de monstros.<br><br><strong class="rotulo">História:</strong> A região era antes
+                        pertencente ao
                         Império de Eutariosh que recentemente perdeu seu controle após uma revolta liderada por Com, um
                         guerreiro
-                        proeminente da região.<br><br>>Pontos de Interesse: Grande Porto de Enéia, Templo do Crânio,
+                        proeminente da região.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Grande Porto de Enéia, Templo do Crânio,
                         Analuque
-                    </p><br>
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Denim</h1>
-                    <img src="Bandeiras/Denin.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Ninéia<br>Um deserto frígido mas relativamente
-                        habitável. Sua população é baixa, e atulmente grande parte de seu território é selvagem, porém
+                    <h1 id="denim" class="container_txt">Denim</h1>
+                    <img src="Bandeiras/Denin.png" class="bandeira" alt="Bandeira de Denim" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Ninéia<br>Um deserto frígido mas relativamente
+                        habitável. Sua população é baixa, e atualmente grande parte de seu território é selvagem, porém
                         em cidades e grandes agrupamentos é possível encontrar poderosos magos que controlam cada cidade
-                        individualmente, que realizam acordos com a capital de maneira semelhante à uma confederação. É
+                        individualmente, que realizam acordos com a capital de maneira semelhante a uma confederação. É
                         dito que os melhores marinheiros, saqueadores ou piratas podem ser encontrados na
-                        costa de Coneia.<br><br>>História:
-                        A região era antes pertentente ao
+                        costa de Coneia.<br><br><strong class="rotulo">História:</strong> A região era antes pertencente ao
                         Império de Eutariosh que recentemente perdeu seu controle da região. Foi-se estabelecida
                         novamente uma
                         antiga
                         linhagem de lordes magos como regentes da região.
 
-                        <br><br>>Pontos de Interesse: Torre de Nin, Lago Alto de Cartah
-                    </p><br>
+                        <br><br><strong class="rotulo">Pontos de Interesse:</strong> Torre de Nin, Lago Alto de Cartah
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Deltrin</h1>
-                    <img src="Bandeiras/Deltrin.png" class="bandeira">
-                    <p id="texto-longo">
-                        >Capital: Delani<br>
+                    <h1 id="deltrin" class="container_txt">Deltrin</h1>
+                    <img src="Bandeiras/Deltrin.png" class="bandeira" alt="Bandeira de Deltrin" loading="lazy" decoding="async">
+                    <p class="texto-longo">
+                        <strong class="rotulo">Capital:</strong> Delani<br>
                         Assolada por um impetuoso deserto no continente, as terras de Deltrin são conhecidas e temidas
                         por viajantes e mercadores pelas suas ilhas perigosas e águas turbulentas, infestadas por
                         monstros marinhos e tempestades súbitas. Os ventos imprevisíveis e as correntes traiçoeiras
@@ -190,63 +187,62 @@
                         de piratas, ladrões e assassinos em suas águas, atualmente dominadas por um rei pirata que
                         governa através do medo e da força.<br><br>
 
-                        >História: Inicialmente um conjunto de tribos e facções separadas, as ilhas da região se
+                        <strong class="rotulo">História:</strong> Inicialmente um conjunto de tribos e facções separadas, as ilhas da região se
                         tornaram uma importante rota de comércio e troca, até o domínio militar de Deltrin, uma cidade
                         costeira que expandiu seu poder e influência em um poderoso império mercantil. Anos de riqueza e
-                        prosperidade foram lentamente corroídos por corrupção e mal controle da região. O império
+                        prosperidade foram lentamente corroídos por corrupção e mau controle da região. O império
                         colapsou por completo com incursões vindas do continente por bandas de mercenários vindas do
                         norte, fugindo das Guerras Vermelhas. Reduzida a cidades quase independentes tomadas por lordes
                         de guerra e guildas de pirataria, um general hobgoblin é respeitado, temido e odiado pela
                         região, que o considera rei pirata.<br><br>
 
-                        >Pontos de Interesse: Porto de Pombos, Penhascos de Ossos, Ilha da Névoa Eterna, Tumba do Rei
+                        <strong class="rotulo">Pontos de Interesse:</strong> Porto de Pombos, Penhascos de Ossos, Ilha da Névoa Eterna, Tumba do Rei
                         Pirata, Mercado dos Ocultos
-                    </p><br>
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Eutariosh</h1>
-                    <img src="Bandeiras/Etairosh.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Escuteon<br>Um reino recente, consiste principalmete de planícies e
+                    <h1 id="eutariosh" class="container_txt">Eutariosh</h1>
+                    <img src="Bandeiras/Etairosh.png" class="bandeira" alt="Bandeira de Eutariosh" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Escuteon<br>Um reino recente, consiste principalmente de planícies e
                         pradarias, com uma cultura forte de hipismo. Também grandes cidades foram erguidas como postos
-                        de comércio com outras cidades.<br><br>>História: As regiões do atual
+                        de comércio com outras cidades.<br><br><strong class="rotulo">História:</strong> As regiões do atual
                         reino de Eutariosh antes eram uma província de Uralan, até uma crise interna ocorrida pelo
-                        fato de que o rei de Uralan, Pepe II estava idoso e perto de sua morte. Incerteza e insatifação
+                        fato de que o rei de Uralan, Pepe II estava idoso e perto de sua morte. Incerteza e insatisfação
                         geraram um sentimento de separação e, liderados por Laduin, uma guerra foi travada que resultou
                         na separação do império. Pouco tempo após isso, a influência de Laduin nas partes mais distantes
-                        do reino, gerando vários conflitos internos. Estes confltos resultaram na separação das regiões
+                        do reino, gerando vários conflitos internos. Estes conflitos resultaram na separação das regiões
                         de
-                        Conia, Denin e Itapas.<br><br>>Pontos de Interesse: Biblioteca do Corvo, Vale de Marelin,
-                        Monolito, Vila Andante de Rioabá</p><br>
+                        Conia, Denin e Itapas.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Biblioteca do Corvo, Vale de Marelin,
+                        Monolito, Vila Andante de Rioabá</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">G.H.A.L.</h1>
-                    <img src="Bandeiras/GHAL.jpeg" class="bandeira">
-                    <p id="texto-longo">>Capital: Ghal<br>Não muito é conhecido dessa ilha isolada, apenas que
+                    <h1 id="g-h-a-l" class="container_txt">G.H.A.L.</h1>
+                    <img src="Bandeiras/GHAL.jpeg" class="bandeira" alt="Bandeira de G.H.A.L." loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Ghal<br>Não muito é conhecido dessa ilha isolada, apenas que
                         habitantes da
                         ilha são grandes comerciantes e inovadores, e que não parece existir algum tipo de governo, mas
-                        um conjunto de guilda e grupos de comércio.
-                        <br><br>>História: É dito que um grupo de diversos halflings se rebelaram em um antigo reino nas
-                        regiões de Wranvalur, e decidiram se exilarem para uma pequena ilha não habitada. A ilha era
+                        um conjunto de guildas e grupos de comércio.
+                        <br><br><strong class="rotulo">História:</strong> É dito que um grupo de diversos halflings se rebelaram em um antigo reino nas
+                        regiões de Wranvalur, e decidiram se exilar para uma pequena ilha não habitada. A ilha era
                         infestada de criaturas reptilianas e templos de homens serpente, que foram expulsos com a
                         chegada dos halflings. O local é visitado por comerciantes e mercadores corajosos, com o
-                        objetivo de obter um pouco da grande riqueza desconhecida da ilha.<br><br>>Pontos de
-                        Interesse: Porto Gely, Torre Flutuante de Sonek
-                    </p><br>
+                        objetivo de obter um pouco da grande riqueza desconhecida da ilha.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Porto Gely, Torre Flutuante de Sonek
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Ingrarim</h1>
-                    <img src="Bandeiras/Ingrarin.jpeg" class="bandeira">
-                    <p id="texto-longo">>Capital: Gongur<br>Grande região perigosa, local de origem dos anões, montanhas
+                    <h1 id="ingrarim" class="container_txt">Ingrarim</h1>
+                    <img src="Bandeiras/Ingrarin.jpeg" class="bandeira" alt="Bandeira de Ingrarim" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Gongur<br>Grande região perigosa, local de origem dos anões, montanhas
                         e
-                        gelo. É dito que os anões acestrais foram criados aqui. A região se destaca pelas grandes obras
+                        gelo. É dito que os anões ancestrais foram criados aqui. A região se destaca pelas grandes obras
                         de pedra e as gigantescas minas nas montanhas. As regiões ao norte são muito perigosas e
-                        inóspitas, não apenas pelo clima mas também as criaturas que habitam lá.<br><br>>História: As
+                        inóspitas, não apenas pelo clima mas também as criaturas que habitam lá.<br><br><strong class="rotulo">História:</strong> As
                         lendas dizem que
                         Bakevid, deus da forja, invenções e criações, estava em uma dura batalha com dragões, quando ele
                         acidentalmente golpeou uma montanha com seu martelo. O impacto continha tanta energia divina que
@@ -257,110 +253,108 @@
                         obteve muito sucesso, sua influência se espalhou por toda a região, que começou a ser
                         subordinada pelo líder da cidade. Com o tempo, vários anões tiveram curiosidade do mundo afora e
                         decidiram se espalhar, compartilhando seus conhecimentos com aqueles que
-                        precisavam.<br><br>>Pontos de Interesse: Pico Quebrado de Bakevid, Trono do Dragão, Grande
+                        precisavam.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Pico Quebrado de Bakevid, Trono do Dragão, Grandes
                         Salões de
-                        Geloferro, Biblioteca de Pedra, Lago das Lágrimas Congeladas</p><br>
+                        Geloferro, Biblioteca de Pedra, Lago das Lágrimas Congeladas</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Itapas</h1>
-                    <img src="Bandeiras/Itapas.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Iterin<br>a região de Itapas constitui cidades e vilas semi autônomas
+                    <h1 id="itapas" class="container_txt">Itapas</h1>
+                    <img src="Bandeiras/Itapas.png" class="bandeira" alt="Bandeira de Itapas" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Iterin<br>a região de Itapas constitui cidades e vilas semiautônomas
                         mas
                         com um lorde entre elas, com um clima ameno ao norte e densas florestas úmidas ao sul,
-                        é uma região selvagem e sucetível à ataques de vários tipos de crituras, fazendo a vida aqui ser
+                        é uma região selvagem e suscetível a ataques de vários tipos de criaturas, fazendo a vida aqui ser
                         bem difícil. Enquanto reservado para apenas trabalhos extremamente perigosos ou usos nefários, a
                         prática de magias necromânticas é abertamente praticada em Itapas, com magos poderosos e antigos
                         usando seus poderes para explorar, defender locais, e outras atividades. O povo das diferentes
                         habitações já estaria acostumado com o odor de carne apodrecendo trabalhando em uma construção,
-                        algo que tornaria o uso deste tipo de magia mais difícil em outros locais.<br><br>>História:
-                        Recentemente
-                        independente de Eutariosh, a socidedade de Itapas era habitada por comunidades no geral
-                        autônomas mas que compartilhavam uma cultira entre si,
-                        até serem anexadas e integradas à Uralan, que tinha interesse em minas de prata na região. Os
+                        algo que tornaria o uso deste tipo de magia mais difícil em outros locais.<br><br><strong class="rotulo">História:</strong> Recentemente
+                        independente de Eutariosh, a sociedade de Itapas era habitada por comunidades no geral
+                        autônomas mas que compartilhavam uma cultura entre si,
+                        até serem anexadas e integradas a Uralan, que tinha interesse em minas de prata na região. Os
                         habitantes apoiaram a guerra de Eutariosh então
                         foram integrados ao império. Recentemente os habitantes se sentiam mal representados e
                         explorados por Eutariosh então lutaram e após um
                         período de conflitos, liderados pelo mago Alguin Korod, conseguiram
-                        independência.<br><br>>Pontos de Interesse: Fortaleza Stok, Monumento de
-                        Korod, Lago do Espelho, Crânio Gigante da Colina</p><br>
+                        independência.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Fortaleza Stok, Monumento de
+                        Korod, Lago do Espelho, Crânio Gigante da Colina</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Kapparalin</h1>
-                    <img src="Bandeiras/Kapparalin.jpeg" class="bandeira">
-                    <p id="texto-longo">>Capital: Alahim<br>Uma gigantesca ilha com selvas maravilhosas e perigosas,
+                    <h1 id="kapparalin" class="container_txt">Kapparalin</h1>
+                    <img src="Bandeiras/Kapparalin.jpeg" class="bandeira" alt="Bandeira de Kapparalin" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Alahim<br>Uma gigantesca ilha com selvas maravilhosas e perigosas,
                         pouco é
                         conhecido de Kapparalin, mas se sabe que foi nestas selvas densas que os primeiros elfos foram
-                        tirados das antigas Árvores Primordiais, alguns dizem pela prórpia deusa da natureza, Razzmsen,
-                        para servirem como protetores do mundo natural.<br><br>>História: Eventualemte, os elfos
+                        tirados das antigas Árvores Primordiais, alguns dizem pela própria deusa da natureza, Razzmsen,
+                        para servirem como protetores do mundo natural.<br><br><strong class="rotulo">História:</strong> Eventualmente, os elfos
                         dominaram várias habilidades, como criar ferramentas e armas da madeira das árvores lendárias da
                         ilha, fazendo a própria árvore crescer na forma desejada. Após uma grande revolta na ilha,
                         vários deixaram a ilha para trás, se adaptando e se espalhando em quase todas as regiões de
                         Epeon, alguns até criando grandes reinos élficos, tentando deixar suas vidas em Kapparalin para
-                        trás.<br><br>>Pontos de Interesse: Templo Elevado, Lago Trion, Árvore de
-                        Origem, Porto Alit</p><br>
+                        trás.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Templo Elevado, Lago Trion, Árvore de
+                        Origem, Porto Alit</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Korodai</h1>
-                    <img src="Bandeiras/Korodai.jpeg" class="bandeira">
-                    <p id="texto-longo">>Capital: Pequena Vargem<br>A região de Korodai é seca e inóspida, sendo formada
+                    <h1 id="korodai" class="container_txt">Korodai</h1>
+                    <img src="Bandeiras/Korodai.jpeg" class="bandeira" alt="Bandeira de Korodai" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Pequena Vargem<br>A região de Korodai é seca e inóspita, sendo formada
                         principalmente por desertos, montanhas
-                        e pradarias. O clima local concentrou uma grande população de orcs, goblinóides e outras
+                        e pradarias. O clima local concentrou uma grande população de orcs, goblinoides e outras
                         criaturas que dificultavam a
                         habitação de outras raças. Lendas e contos quase esquecidos dizem de um antigo reino que
                         existia, antes das constantes guerras com estes monstros, mas a falta de cuidado de um grupo de
                         arcanistas abriu portais para terras distantes, iniciando a invasão dessas criaturas no
                         continente. A existência de antigos templos e construções espalhadas pelas dunas vermelhas
-                        sustentam essas teorias<br><br>>História: Por muito tempo, apenas tribos e grupos nômades
+                        sustentam essas teorias<br><br><strong class="rotulo">História:</strong> Por muito tempo, apenas tribos e grupos nômades
                         separados habitavam a região. Até
                         que um homem pelo nome de Kanain, o Lorde Vaper (sua verdadeira origem ainda desconhecida), de
                         alguma maneira
                         conseguiu unir um número considerável
-                        de tribos sobre uma única bandeira. Com seu novo exército, Vaper lançou uma ofensiva contra o
+                        de tribos sob uma única bandeira. Com seu novo exército, Vaper lançou uma ofensiva contra o
                         reino de Uralan. Mesmo com suas
                         habilidades arcanas e táticas, não obteve sucesso. Após sua queda, um orc que lutou em seu
                         exército pelo nome de Gruumsh, muito
-                        discontente com as ideias e decisões de Vaper tomou seu lugar e instaurou uma espécie de
-                        semi-reino governado por ele mesmo e
-                        líderes locais. Sábios ainda discutem como foi sua assenção, com teorias até dizendo que o
+                        descontente com as ideias e decisões de Vaper tomou seu lugar e instaurou uma espécie de
+                        semirreino governado por ele mesmo e
+                        líderes locais. Sábios ainda discutem como foi sua ascensão, com teorias até dizendo que o
                         lendário ladino Salmonella o inspirou.
-                        <br><br>>Pontos de Interesse: Monolito dos Espíritos, Deserto de Dai, Eterna Fogueira de Grá,
+                        <br><br><strong class="rotulo">Pontos de Interesse:</strong> Monolito dos Espíritos, Deserto de Dai, Eterna Fogueira de Grá,
                         Templo dos Cavaleiros Dejai
-                    </p><br>
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Kredel</h1>
-                    <img src="Bandeiras/Kredel.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Azure<br>O recém formado Arque-Condado de Kredel tem sua existência
-                        baseada no rio com o mesmo nome, e às poderosas tradições arnacas e marciais que permeam em sua
+                    <h1 id="kredel" class="container_txt">Kredel</h1>
+                    <img src="Bandeiras/Kredel.png" class="bandeira" alt="Bandeira de Kredel" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Azure<br>O recém-formado Arque-Condado de Kredel tem sua existência
+                        baseada no rio com o mesmo nome, e às poderosas tradições arcanas e marciais que permeiam em sua
                         sociedade.
-                        Seus habitentes vivem um conflito quase constante com hordas vindas do sul, mas muitas das vezes
+                        Seus habitantes vivem um conflito quase constante com hordas vindas do sul, mas muitas das vezes
                         estão bem preparados pela cultura militar de Kredel. Chamado militar é obrigatório e necromancia
                         para uso em combate não é visto com suspeita. Para muitos Kredelianos, é apenas mais uma forma
-                        de servir sua pátrica após a morte.<br><br>>História:
-                        Anteriormente, as margens do rio Kredel era lar de várias comunidades próximas com uma forte
-                        conexão com artes místicas, unificadas eras atrás por um poderoso conselho de mestres arnacos,
+                        de servir sua pátria após a morte.<br><br><strong class="rotulo">História:</strong> Anteriormente, as margens do rio Kredel eram lar de várias comunidades próximas com uma forte
+                        conexão com artes místicas, unificadas eras atrás por um poderoso conselho de mestres arcanos,
                         que sobrevive até hoje. A região foi uma província do Império de Valryn, provendo instrumentos
                         místicos e magos ao império, assim como vários soldados e generais. Necromancia foi suprimida
-                        por muito tempo sobre o conrole de Valryn, que via essa prática como cruel e não apropriada para
-                        o Império, mas agora livre da influência de Valry, hordas de guerreiros mortos-vivos se erguem
-                        para lutar novamente.<br><br>>Pontos de Interesse: Praça das Três Casas, Praça Flutuante de
+                        por muito tempo sob o controle de Valryn, que via essa prática como cruel e não apropriada para
+                        o Império, mas agora livre da influência de Valryn, hordas de guerreiros mortos-vivos se erguem
+                        para lutar novamente.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Praça das Três Casas, Praça Flutuante de
                         Alakan, Pico Rubro,
-                        Monumento de Allawess</p><br>
+                        Monumento de Allawess</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Lechlia</h1>
-                    <img src="Bandeiras/Lechlia.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Sharne<br>Conhecida como "A Terra do Horizonte Perdido", Lechlia é um
+                    <h1 id="lechlia" class="container_txt">Lechlia</h1>
+                    <img src="Bandeiras/Lechlia.png" class="bandeira" alt="Bandeira de Lechlia" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Sharne<br>Conhecida como "A Terra do Horizonte Perdido", Lechlia é um
                         reino
                         gigantesco que se estende por uma
                         vasta região, contendo vários segredos e mistérios escondidos em suas dunas de areia laranja.
@@ -369,9 +363,9 @@
                         é difícil e extrema. Povos da região se adaptaram em sobreviver pelo comércio com outros povos e
                         extração de outros bens, já
                         que a região não é tão fértil. Pelas condições difíceis de vida, com o tempo foi criada uma
-                        cultura de mobilidade, nomidissismo e auto-suficiência,
+                        cultura de mobilidade, nomadismo e autossuficiência,
                         com Lechlia tendo poucas
-                        cidades, das quais a maioria se encontram nas montanhas<br><br>>História: A região era
+                        cidades, das quais a maioria se encontram nas montanhas<br><br><strong class="rotulo">História:</strong> A região era
                         principalmente habitada por comunidades e caravanas nômades, que transportavam bens pelo grande
                         deserto, desde os
                         lagos da costa até as montanhas ao oeste. Com o tempo, grandes postos de troca começaram a
@@ -384,23 +378,23 @@
                         espalhou rapidamente pelas dunas de Lechlia, dedicada ao deus da luz Markellos.
                         Várias batalhas foram travadas mas
                         os povos vizinhos de Lechlia em sua maioria conseguiram resistir.
-                        <br><br>>Pontos de Interesse: Chama de Zoroastris, Monastério da Luz, Obelisco de Ilgurat, Lago
+                        <br><br><strong class="rotulo">Pontos de Interesse:</strong> Chama de Zoroastris, Monastério da Luz, Obelisco de Ilgurat, Lago
                         das Memórias
-                    </p><br>
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Mechestur</h1>
-                    <img src="Bandeiras/Mechestur.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Fester<br>Mechestur é uma nação onde a maioria da população vive em
+                    <h1 id="mechestur" class="container_txt">Mechestur</h1>
+                    <img src="Bandeiras/Mechestur.png" class="bandeira" alt="Bandeira de Mechestur" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Fester<br>Mechestur é uma nação onde a maioria da população vive em
                         cidades,
                         com sua fundação em uma magia quase única. Vários gnomos
-                        nativos do local se expecializaram em embutir objetos com magia, criando vários avanços únicos,
+                        nativos do local se especializaram em embutir objetos com magia, criando vários avanços únicos,
                         mas também criando
                         uma cultura extremamente reclusa. Suas cidades são uma maravilha para viajantes, integrando
                         magia em objetos do dia a dia, fazendo suas cidades parecerem ter uma vida
-                        própria<br><br>>História: Em era atrás, a região era habitada por pequenos reinos sem muito
+                        própria<br><br><strong class="rotulo">História:</strong> Em era atrás, a região era habitada por pequenos reinos sem muito
                         poderio, até a descoberta de estranhas rochas com propriedades mágicas nas montanhas, que
                         permitiram novos e interessantes usos arcanos serem desenvolvidos. Golor foi um dos principais
                         pesquisadores dessas propriedades mágicas, considerado fundador da cultura da região e venerado
@@ -412,33 +406,33 @@
                         definitivamente acabou
                         quando uma bomba arcana, desenvolvida por vários magos e artífices foi explodida em uma cidade
                         ao norte. O poder desta
-                        arma foi tão forte que é teorisado que a própria realidade foi um pouco quebrada. Por causa
+                        arma foi tão forte que é teorizado que a própria realidade foi um pouco quebrada. Por causa
                         disso uma grande região
                         do norte da nação virou um local inabitável, com constantes monstros e quebras da realidade
-                        permeando a região. Estas panícies são praticamente inabitadas, mas rumores e sussuros são ditos
+                        permeando a região. Estas planícies são praticamente inabitadas, mas rumores e sussurros são ditos
                         de um artífice torcido pela magia selvagem, que governa criaturas mágicas e bizarras, se
                         preparando para uma invasão<br><br>
-                        >Pontos de Interesse: Torre de Heirote, Planícies de Prata, Orbe Central de Fester</p><br>
+                        <strong class="rotulo">Pontos de Interesse:</strong> Torre de Heirote, Planícies de Prata, Orbe Central de Fester</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Mevdova</h1>
-                    <img src="Bandeiras/Mevdova.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Chi Siow<br>Descrição e tals<br><br>>História: História e
-                        tals.<br><br>>Pontos de Interesse: 🗿</p><br>
+                    <h1 id="mevdova" class="container_txt">Mevdova</h1>
+                    <img src="Bandeiras/Mevdova.png" class="bandeira" alt="Bandeira de Mevdova" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Chi Siow<br>Descrição e tals<br><br><strong class="rotulo">História:</strong> História e
+                        tals.<br><br><strong class="rotulo">Pontos de Interesse:</strong> 🗿</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Mirafir</h1>
-                    <img src="Bandeiras/Mirafir.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Lesrem<br>Um reino relativamente pequeno, Mirafir rapidamente se
+                    <h1 id="mirafir" class="container_txt">Mirafir</h1>
+                    <img src="Bandeiras/Mirafir.png" class="bandeira" alt="Bandeira de Mirafir" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Lesrem<br>Um reino relativamente pequeno, Mirafir rapidamente se
                         tornou uma
                         região rica em recursos, por minas de metais raros e uma grande região fértil. Populada por
                         humanos, uma grande quantidade de elfos, halflings e outros povos foram integrados pelas rotas
                         de comércio com Lechlia ao lado.<br>
-                        <br>>História: Originalmente apenas a cidade de Lesrem, criou uma rápida expansão e anexação de
+                        <br><strong class="rotulo">História:</strong> Originalmente apenas a cidade de Lesrem, criou uma rápida expansão e anexação de
                         territórios vizinhos, até formar as bordas atuais, integrando as culturas e tradições dos povos
                         conquistados. A cidade
                         de Lesrem foi construída no centro de um grande lago, de mesmo nome, por magos arquitetos logo
@@ -447,128 +441,126 @@
                         1205 AQ, Suzane Castean, foi essencial
                         em acalmar e apaziguar a região de Mechestur que passava pelas Guerras Psíquicas, que também
                         tiveram impactos
-                        em regiões de Mirafir.<br><br>>Pontos de Interesse: Lago de Lesrem, Gigante Caído, Alta
+                        em regiões de Mirafir.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Lago de Lesrem, Gigante Caído, Alta
                         Biblioteca do Lago
-                    </p><br>
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Napaj</h1>
-                    <img src="Bandeiras/Napaj.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Koyu<br>Uma grande e ancestral ilha rica em aventuras, Napaj é
+                    <h1 id="napaj" class="container_txt">Napaj</h1>
+                    <img src="Bandeiras/Napaj.png" class="bandeira" alt="Bandeira de Napaj" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Koyu<br>Uma grande e ancestral ilha rica em aventuras, Napaj é
                         unificada por um Imperador e vários lordes locais que lutam entre si por controle de terras. O
                         Imperador de Napaj é sempre considerado a encarnação de uma divindade no plano material, com o
                         atual imperador, Teo Kuzin sendo apontado como uma encarnação de Shad, o deus da guerra e
                         conflitos. Vários
                         viajantes, colonizadores, exploradores e mercadores de Napaj já viajaram pelos mares fazendo
-                        comércio com outros povos e descobrindo novos locais. <br><br>>História: Em tempos ancestrais, a
+                        comércio com outros povos e descobrindo novos locais. <br><br><strong class="rotulo">História:</strong> Em tempos ancestrais, a
                         ilha de Napaj foi um poderoso último refúgio de dragões, que controlavam abertamente muitas
                         terras até recentemente, pelo fato de que gigantes não ajudaram neste conflito. Após isso uma
                         multitude de pequenos chefes e clãs se formaram, batalhando entre si e contra povos
                         vizinhos. Após a quase invasão completa de forças de Atariaridia, um general se ergueu das
-                        cinzas e se tornou Kikuchi, o primeiro imperador.<br><br>>Pontos de Interesse: Templo Dourado,
-                        Ponte Eterna de Tukh, Colina Vermelha, Monte Keanu, Porto Velho de Takanaka</p><br>
+                        cinzas e se tornou Kikuchi, o primeiro imperador.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Templo Dourado,
+                        Ponte Eterna de Tukh, Colina Vermelha, Monte Keanu, Porto Velho de Takanaka</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Nicoha</h1>
-                    <img src="Bandeiras/Nicoha.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Folski<br>Folski é um reino próspero graças à sua localização,
+                    <h1 id="nicoha" class="container_txt">Nicoha</h1>
+                    <img src="Bandeiras/Nicoha.png" class="bandeira" alt="Bandeira de Nicoha" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Folski<br>Folski é um reino próspero graças à sua localização,
                         facilitando comércio marítimo e também antigos ensinamentos mágicos de uma raça inteligente que
                         habitava
-                        a região, hoje reduzida à apenas lendas e mitos.<br><br>>História: Logo após A Queda,
-                        várias cidade estados se formaram em toda a região das planícies de Nikolski. Com o tempo,
+                        a região, hoje reduzida a apenas lendas e mitos.<br><br><strong class="rotulo">História:</strong> Logo após A Queda,
+                        várias cidades-estados se formaram em toda a região das planícies de Nikolski. Com o tempo,
                         avanços mágicos, comércio e guerras, a região foi sendo unificada sob a cidade de Folski, e o
                         novo reino foi nomeado a partir do nome de sua nova rainha, Nikol. Uma brutal invasão dos anões
                         de Ingrarim ao norte deixou a região devastada e quase esquecida, até que rebeliões se formaram
-                        e os invasores expulsos, um conselho de sábios foi criado para governar.<br><br>>Pontos de
-                        Interesse: Ruínas de Portefeuille, Espada Colossal de Andre, Montanhas Roxas, Torre Rubra</p><br>
+                        e os invasores expulsos, um conselho de sábios foi criado para governar.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Ruínas de Portefeuille, Espada Colossal de Andre, Montanhas Roxas, Torre Rubra</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Shidekar</h1>
-                    <img src="Bandeiras/Shidekar.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Num<br>Tendo um clima quente e brutal, Shidekar é uma comunidade de
+                    <h1 id="shidekar" class="container_txt">Shidekar</h1>
+                    <img src="Bandeiras/Shidekar.png" class="bandeira" alt="Bandeira de Shidekar" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Num<br>Tendo um clima quente e brutal, Shidekar é uma comunidade de
                         pequenos reinados e tribos unidas sob a força de um reinado opressor. Um destaque da região é
-                        qualquer disputa entre duas pessoas pode ser legalmente resolvido em uma disputa corporal,
-                        muitas vezes resultando na morte e vasto entreterimento para os outros.<br><br>>História:
-                        Shidekar
+                        qualquer disputa entre duas pessoas pode ser legalmente resolvida em uma disputa corporal,
+                        muitas vezes resultando na morte e vasto entretenimento para os outros.<br><br><strong class="rotulo">História:</strong> Shidekar
                         foi formado após o colapso de um império antigo, quando tribos nômades e clãs guerreiros
                         incluindo humanos e hobgoblins
                         começaram a disputar a região das montanhas ricas em minérios. Séculos de guerra culminaram na
                         unificação forçada sob Kiesi Sangue-Ralo. Desde
                         então, Shidekar é governado por facções militares, sendo seu líder supremo —
                         o Alto Forjador — determinado pelo domínio em combate e respeito dos clãs.
-                        .<br><br>>Pontos de Interesse: Lago Argus, Vale do Sal, Poço de Yuneiro, O Grande Estádio</p><br>
+                        .<br><br><strong class="rotulo">Pontos de Interesse:</strong> Lago Argus, Vale do Sal, Poço de Yuneiro, O Grande Estádio</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Skapol</h1>
-                    <img src="Bandeiras/Skapol.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Vernison<br>Descrição e tals<br><br>>História: História e
-                        tals.<br><br>>Pontos de Interesse: 🗿</p><br>
+                    <h1 id="skapol" class="container_txt">Skapol</h1>
+                    <img src="Bandeiras/Skapol.png" class="bandeira" alt="Bandeira de Skapol" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Vernison<br>Descrição e tals<br><br><strong class="rotulo">História:</strong> História e
+                        tals.<br><br><strong class="rotulo">Pontos de Interesse:</strong> 🗿</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Tronia</h1>
-                    <img src="Bandeiras/Tronia.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Nova Mughiria<br>Uma região quente e úmida ao sul, pradarias ao centro
+                    <h1 id="tronia" class="container_txt">Tronia</h1>
+                    <img src="Bandeiras/Tronia.png" class="bandeira" alt="Bandeira de Tronia" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Nova Mughiria<br>Uma região quente e úmida ao sul, pradarias ao centro
                         e gélido ao norte, Tronia é um conjunto de tribos, cidades e grupos de mercenários unificados
-                        por um misterioso e poderoso mago que domina a região á mais tempo do que qualquer um pode
+                        por um misterioso e poderoso mago que domina a região há mais tempo do que qualquer um pode
                         dizer. As ilhas ao norte são ditas conter gigantescos
                         monstros e grandes répteis, onde apenas os exploradores mais corajosos (ou tolos) ousam
-                        ir <br><br>>História: A região de Tronia foi pouco afetada pela Queda, pois dragões nunca foram
+                        ir <br><br><strong class="rotulo">História:</strong> A região de Tronia foi pouco afetada pela Queda, pois dragões nunca foram
                         muito presentes na região, que já era dominada por grandes bestas e monstros. A vida para os
                         primeiros habitantes da região era extremamente difícil por causa disso, até que vários dragões
-                        e estes monstros lutaram entre si, abrindo caminho para seres humanóides. Porém estes monstros
+                        e estes monstros lutaram entre si, abrindo caminho para seres humanoides. Porém estes monstros
                         ainda podem ser encontrados nas ilhas ao norte. Vários comerciantes viajaram os oceanos para
-                        colonizar e habitar outras terras, como Coneia e Denin. <br><br>>Pontos de Interesse: Porto
-                        Hanam, Ponte de Statio, Estátua Dourada de Gahali</p><br>
+                        colonizar e habitar outras terras, como Coneia e Denin. <br><br><strong class="rotulo">Pontos de Interesse:</strong> Porto
+                        Hanam, Ponte de Statio, Estátua Dourada de Gahali</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Uk-raim</h1>
-                    <img src="Bandeiras/Uk-Raim.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Kiv<br>Descrição e tals<br><br>>História: História e
-                        tals.<br><br>>Pontos de Interesse: 🗿</p><br>
+                    <h1 id="uk-raim" class="container_txt">Uk-raim</h1>
+                    <img src="Bandeiras/Uk-Raim.png" class="bandeira" alt="Bandeira de Uk-raim" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Kiv<br>Descrição e tals<br><br><strong class="rotulo">História:</strong> História e
+                        tals.<br><br><strong class="rotulo">Pontos de Interesse:</strong> 🗿</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Ulgus</h1>
-                    <img src="Bandeiras/Ulgus.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Iknus<br>Um local quente e de difícil acesso, os habitantes
+                    <h1 id="ulgus" class="container_txt">Ulgus</h1>
+                    <img src="Bandeiras/Ulgus.png" class="bandeira" alt="Bandeira de Ulgus" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Iknus<br>Um local quente e de difícil acesso, os habitantes
                         desenvolveram
                         cidades e habilidades para
                         sobreviver nas montanhas, que cobrem toda a região. Com um clima quente e que varia de muito
-                        chuvoso à àrido, o povo que habita as montanhas costuma ser mais isolacionistas, enquanto os que
+                        chuvoso a árido, o povo que habita as montanhas costuma ser mais isolacionista, enquanto os que
                         habitam nas poucas terras baixas se tornaram grandes comerciantes e exploradores, alguns até
-                        alcançando o outro continente mesmo na Era dos Gigantes.<br><br>>História:Os primeiros gigantes
-                        à habitar a região expulsaram
+                        alcançando o outro continente mesmo na Era dos Gigantes.<br><br><strong class="rotulo">História:</strong> Os primeiros gigantes
+                        a habitar a região expulsaram
                         vários malignos dragões das Montanhas de Ouro, porém alguns ainda podem ser encontrados,
-                        planejando sua vingança. Estes gigantes encontraram os primeiros humanóides vivendo próximo às
+                        planejando sua vingança. Estes gigantes encontraram os primeiros humanoides vivendo próximo às
                         praias do local, que os consideraram grandes reis e libertadores. Os gigantes, para ensinar
                         estes humanos seus costumes e habilidades, criaram versões menores de si mesmos chamados de
                         Golias. Estes Golias conviveram com humanos e ensinaram muitas habilidades, como viver entre
                         montanhas e domar suas criaturas. Por razões ainda desconhecidas, os gigantes deixaram estas
                         terras, que após várias guerras e expansões, se uniram no Reino de Ulgus, governado pela Imperatriz Miztak
-                        <br><br>>Pontos de Interesse: Pico Pichi, Templo Aéreo de Molezum, Forte de Carzio, Torres de Urs
-                    </p><br>
+                        <br><br><strong class="rotulo">Pontos de Interesse:</strong> Pico Pichi, Templo Aéreo de Molezum, Forte de Carzio, Torres de Urs
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Uralan</h1>
-                    <img src="Bandeiras/Uralan.jpeg" class="bandeira">
-                    <p id="texto-longo">>Capital: Suanam<br>Localizada em uma região bem úmida e quente, Uralan se
+                    <h1 id="uralan" class="container_txt">Uralan</h1>
+                    <img src="Bandeiras/Uralan.jpeg" class="bandeira" alt="Bandeira de Uralan" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Suanam<br>Localizada em uma região bem úmida e quente, Uralan se
                         tornou um
-                        dos reinos mais poderosos e influêntes
+                        dos reinos mais poderosos e influentes
                         da região, sendo um ponto estratégico no comércio entre reinos e defesa de criaturas malignas. A
                         sociedade de Uralan é composta por diversos povos de outras regiões que se
                         estabeleceram em suas terras.
@@ -576,7 +568,7 @@
                         de Uralan é bem diversa,
                         com pradarias próximas da costa, uma gigantesca selva ancestral ao centro, uma rede de montanhas
                         dividindo o reino no centro do continente
-                        e uma grande região pantanosa além das montanhas.<br><br>>História: O povo de Uralan é composto
+                        e uma grande região pantanosa além das montanhas.<br><br><strong class="rotulo">História:</strong> O povo de Uralan é composto
                         por vários grupos: os
                         que já habitavam a região em tempos antigos, exploradores e mercadores que vieram do mar,
                         principalmente de Ulgus e Napaj
@@ -595,32 +587,31 @@
                         Canário, um elfo patrulheiro e
                         exímio arqueiro, que defendeu o imperador e lutou bravamente na guerra do norte, indicado
                         diretamente por Pepe II, que hoje
-                        habita as estantes imensas da Biblioteca Real como um fantasma.<br><br>>Pontos de Interesse:
-                        Biblioteca Real de Suanam, Templos
-                        da ilha de Mar-jol, Pântanos de Tuné, Praça dos Heróis em Ohmar</p><br>
+                        habita as estantes imensas da Biblioteca Real como um fantasma.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Biblioteca Real de Suanam, Templos
+                        da ilha de Mar-jol, Pântanos de Tuné, Praça dos Heróis em Ohmar</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Valen</h1>
-                    <img src="Bandeiras/Valen.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Lenbar<br>Valem é uma região inóspida e obscura, com uma cultura
+                    <h1 id="valen" class="container_txt">Valen</h1>
+                    <img src="Bandeiras/Valen.png" class="bandeira" alt="Bandeira de Valen" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Lenbar<br>Valem é uma região inóspita e obscura, com uma cultura
                         muitas vezes considerada macabra, formada por anos de opressão sobre Korodai. Suas riquezas vêm
                         principalmente da mineração de metais e pedras preciosas. Necromancia e outras
-                        magias escuras são comuns.<br><br>>História: Recentemente separada do controle de Korodai,
+                        magias escuras são comuns.<br><br><strong class="rotulo">História:</strong> Recentemente separada do controle de Korodai,
                         a região foi fundada com base em uma rebelião de elfos e outros seres oprimidos e descontentes
                         com a vida em Korodai. É dito que uma antiga ordem de cavaleiros, guerreiros arcanos e
                         estudiosos, conhecidos como Ordem Dejai, se reagrupou nesta região e opera secretamente, em seu
-                        lendário Templo Oculto.<br><br>>Pontos de Interesse: Minas Rubras de Karam, Obelisco das Três
+                        lendário Templo Oculto.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Minas Rubras de Karam, Obelisco das Três
                         Luas,
-                        Vale do Sol Escuro</p><br>
+                        Vale do Sol Escuro</p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Valryn</h1>
-                    <img src="Bandeiras/Valryn.jpeg" class="bandeira">
-                    <p id="texto-longo">>Capital: Romorin<br>Uma vez um grande e expanssívo império que se estendia por
+                    <h1 id="valryn" class="container_txt">Valryn</h1>
+                    <img src="Bandeiras/Valryn.jpeg" class="bandeira" alt="Bandeira de Valryn" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Romorin<br>Uma vez um grande e expansivo império que se estendia por
                         toda a
                         costa,
                         Valryn atual ainda é uma poderosa força militar mas diminuída e mais focada nas suas terras
@@ -630,11 +621,11 @@
                         dos primeiros a expulsar dragões ao exílio, e estabelecer cidades seguras, algo que traz muito
                         orgulho à região. As principais divindades adoradas no império são Syrinx e Shad, com quase toda
                         a população participando de cultos e dedicações.
-                        <br><br>>História: A região foi originalmente habitada por elfos que ainda são a maior parte da
+                        <br><br><strong class="rotulo">História:</strong> A região foi originalmente habitada por elfos que ainda são a maior parte da
                         população.
                         Chegaram ao continente vindos da ilha de Kapparalin, expulsando gigantes que habitavam ali e
-                        contruindo as
-                        primeiras contruções. Após uma era dourada de prosperidade, o império começou a se expandir para
+                        construindo as
+                        primeiras construções. Após uma era dourada de prosperidade, o império começou a se expandir para
                         o sul e
                         norte, integrando e dominando os habitantes. Alguns aceitaram a proteção do império mas muitos
                         estavam
@@ -642,49 +633,44 @@
                         contra
                         Aulora. A guerra trouxe tantos prejuízos que o imperador foi destronado e seu filho, David, foi
                         escolhido
-                        como novo imperador, trazendo uma era de paz e recontrução para o império<br><br>>Pontos de
-                        Interesse: Obelisco Branco de Gutroia, Torre Horizontal de Xernos, Palácio de Arje, Pedra
+                        como novo imperador, trazendo uma era de paz e reconstrução para o império<br><br><strong class="rotulo">Pontos de Interesse:</strong> Obelisco Branco de Gutroia, Torre Horizontal de Xernos, Palácio de Arje, Pedra
                         Inicial
-                    </p><br>
+                    </p>
                 </div>
             </li>
             <li>
                 <div class="container_img">
-                    <h1 class="container_txt">Wranvalur</h1>
-                    <img src="Bandeiras/Wranvalur.png" class="bandeira">
-                    <p id="texto-longo">>Capital: Dusan<br>Uma região relativamente amena, a região de Wranvalur sempre
+                    <h1 id="wranvalur" class="container_txt">Wranvalur</h1>
+                    <img src="Bandeiras/Wranvalur.png" class="bandeira" alt="Bandeira de Wranvalur" loading="lazy" decoding="async">
+                    <p class="texto-longo"><strong class="rotulo">Capital:</strong> Dusan<br>Uma região relativamente amena, a região de Wranvalur sempre
                         foi conhecida por estudos de magias poderosas e esotéricas em outros locais proibidas, como
                         Necromancia. Atualmente governada por um conselho de 6 poderosos magos que representam suas
-                        regiões, poder e arcanismo dominam estas terras.<br><br>>História: Em eras passadas, o local era
+                        regiões, poder e arcanismo dominam estas terras.<br><br><strong class="rotulo">História:</strong> Em eras passadas, o local era
                         dominado por gigantes malignos, que com anos de conflito foram expulsos e recuaram em exílio sob
-                        o poder de humanóides que juntaram suas forças para afastá-los. Esta nova união durou
+                        o poder de humanoides que juntaram suas forças para afastá-los. Esta nova união durou
                         pouquíssimo tempo, pois corrupção, falta de organização e ataques de criaturas malignas como
-                        hobgolins reduziram a região à cidades separadas e subjulgadas. Isso permaneceu até que uma
+                        hobgoblins reduziram a região a cidades separadas e subjugadas. Isso permaneceu até que uma
                         união de 7 conjuradores poderosos, liderados pelo legendário Mago Theoken, unificaram as terras
-                        e estabeleceram um conselho onde eles tomavam as decisões. Eventualmente Theoken desaparaceu,
-                        deixando o conselho para governar, que se mantém até hoje.<br><br>>Pontos
-                        de Interesse: Zigurate do Lago, Templo das Seis Lágrimas, Torre de Valur</p><br>
+                        e estabeleceram um conselho onde eles tomavam as decisões. Eventualmente Theoken desapareceu,
+                        deixando o conselho para governar, que se mantém até hoje.<br><br><strong class="rotulo">Pontos de Interesse:</strong> Zigurate do Lago, Templo das Seis Lágrimas, Torre de Valur</p>
                 </div>
             </li>
         </ul>
-    </center>
+    </main>
 
-    <footer>
+    <footer class="rodape">
         <div class="caixa_baixa">
-            <p id="texto">Dados para rodar</p><br>
-            <nav>
-                <ul>
-                    <li><button class="rolada" onclick="rolada(4)" id="rolada4">D4 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(6)" id="rolada6">D6 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(8)" id="rolada8">D8 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(10)" id="rolada10">D10 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(12)" id="rolada12">D12 :</button> </li>
-                    <li><button class="rolada" onclick="rolada(20)" id="rolada20">D20 :</button> </li>
-                </ul>
-            </nav>
-            <a href="https://github.com/NahNathan" id="final">Feito por Nathan RDS ☕🗿</a>
+            <h2 class="rodape-titulo">Dados para rodar</h2>
+            <ul class="dados">
+                <li><button type="button" class="rolada" data-dado="4"><span class="dado-nome">D4</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="6"><span class="dado-nome">D6</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="8"><span class="dado-nome">D8</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="10"><span class="dado-nome">D10</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="12"><span class="dado-nome">D12</span><span class="dado-valor">–</span></button></li>
+                <li><button type="button" class="rolada" data-dado="20"><span class="dado-nome">D20</span><span class="dado-valor">–</span></button></li>
+            </ul>
+            <a href="https://github.com/NahNathan" class="assinatura" target="_blank" rel="noopener">Feito por Nathan RDS ☕🗿</a>
         </div>
-        <br> <br> <br> <br> <br> <br>
     </footer>
 </body>
 
