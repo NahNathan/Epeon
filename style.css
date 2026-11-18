@@ -90,38 +90,137 @@ nav a:active {
     width: 40vw;
 }
 
-.rolada {
-    color: aliceblue;
-    background-color: brown;
-    font-family: FonteMedieval, Courier;
-    font-size: 4.5vh;
-    transition: all 0.3s;
-    margin: 5%;
-    border-radius: 15%;
-    cursor: pointer;
+/* ================= FOOTER ================= */
+/* Seletores com "body >" para vencer o reset.css, que é carregado depois */
+
+body > footer {
+    position: relative;
+    margin-top: 6vh;
+    padding: 7vh 4vw 5vh;
+    background: linear-gradient(to bottom, chocolate 0%, #8a3a5c 45%, #5A0A80 80%, #33064a 100%);
 }
 
-.rolada:hover {
-    background-color: blueviolet;
-    box-shadow: 1px 1px 10px lightblue;
+/* Linha ornamental no topo do footer */
+body > footer::before {
+    content: "✦";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0.6em;
+    color: bisque;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-shadow: 0 0 8px rgba(255, 228, 196, 0.6);
+    background: chocolate;
+    z-index: 1;
+}
+
+body > footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, bisque, transparent);
+}
+
+/* Os <br> do HTML são substituídos por espaçamento via CSS */
+body > footer > br,
+.caixa_baixa > br {
+    display: none;
 }
 
 .caixa_baixa {
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
     color: aliceblue;
-    padding-top: 2vh;
 }
 
-footer {
-    background: linear-gradient(chocolate, blueviolet);
-}
-
-#final {
-    color: aliceblue;
-    text-align: center;
+.caixa_baixa #texto {
+    margin: 0 0 3vh;
     font-family: FonteMedieval, Courier;
-    font-size: 1.5em;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    letter-spacing: 0.08em;
+    color: bisque;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+}
+
+.caixa_baixa nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+}
+
+.caixa_baixa nav li {
+    display: block;
+}
+
+/* Botões de dado */
+.rolada {
+    min-width: 5.2em;
+    padding: 0.45em 0.8em;
+    color: aliceblue;
+    background: linear-gradient(to bottom, #b33a3a, brown 55%, #7a1f1f);
+    border: 2px solid rgba(255, 228, 196, 0.55);
+    border-radius: 12px;
+    font-family: FonteMedieval, Courier;
+    font-size: clamp(1.1rem, 2.4vw, 1.6rem);
+    font-variant-numeric: tabular-nums;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.25),
+        0 4px 8px rgba(0, 0, 0, 0.35);
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s, background 0.3s, border-color 0.3s;
+}
+
+.rolada:hover {
+    background: linear-gradient(to bottom, #a65ff0, blueviolet 55%, #5A0A80);
+    border-color: bisque;
+    transform: translateY(-3px);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        0 0 14px lightblue;
+}
+
+.rolada:active {
+    transform: translateY(1px);
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.4),
+        0 0 8px lightblue;
+}
+
+.rolada:focus-visible {
+    outline: 2px solid aquamarine;
+    outline-offset: 3px;
+}
+
+/* Assinatura */
+#final {
+    display: inline-block;
+    margin-top: 5vh;
+    padding-top: 2.5vh;
+    border-top: 1px solid rgba(255, 228, 196, 0.35);
+    color: aliceblue;
+    font-family: FonteMedieval, Courier;
+    font-size: 1.15rem;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: color 0.3s, opacity 0.3s, text-shadow 0.3s;
+}
+
+#final:hover {
+    color: bisque;
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 228, 196, 0.5);
+}
+
+#final:active {
+    color: aquamarine;
 }
 
 .container_txt {
@@ -159,5 +258,25 @@ hr{
     .dexter{
         width: 75vw;
         height: auto;
+    }
+
+    body > footer {
+        padding: 6vh 6vw 4vh;
+    }
+
+    .caixa_baixa nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .rolada {
+        width: 100%;
+        min-width: 0;
+        font-size: 1.1rem;
+    }
+
+    #final {
+        font-size: 1rem;
     }
 }
